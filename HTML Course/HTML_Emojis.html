@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Emojis</title>
+</head>
+<body>
+	<h1>Using Emojis in HTML</h1>
+	<p>Emojis are characters from the UTF-8 character set: 😄 😍 💗</p>
+
+	<u><h2>What are Emojis?</h2></u>
+	<p>Emojis look like images, or icons, but they are not.</p>
+	<p>They are letters (characters) from the UTF-8 (Unicode) character set.</p>
+	<p>UTF-8 covers almost all of the characters and symbols in the world.</p>
+
+	<u><h2>The HTML charset Attribute</h2></u>
+	<p>To display an HTML page correctly, a web browser must know the character set used in the page.</p>
+	<p>This is specified in the <span><</span>meta> tag:</p>
+	<b><span><</span>meta charset="UTF-8"></b>
+	<p>If not specified, UTF-8 is the default character set in HTML.</p>
+
+	<u><h2>UTF-8 Characters</h2></u>
+	<p>Many UTF-8 characters cannot be typed on a keyboard, but they can always be displayed using numbers (called entity numbers):</p>
+	<ul>
+		<li>A is 65</li>
+		<li>B is 66</li>
+		<li>C is 67</li>
+	</ul>
+
+	<h3>Examples</h3>
+	<p>I will display <span>&</span>#65; <span>&</span>#66; <span>&</span>#67;</p>
+	<p>I will display &#65; &#66; &#67;</p>
+
+	<h3>Example Explained</h3>
+	<p>The <span><</span>meta charset="UTF-8"> element defines the character set.</p>
+	<p>The characters A, B, and C, are displayed by the numbers 65, 66, and 67.</p>
+	<p>To let the browser understand that you are displaying a character, you must start the entity number with &# and end it with ; (semicolon).</p>
+
+	<u><h2>Emoji Character</h2></u>
+	<p>Emojis are also characters from the UTF-8 alphabet:</p>
+	<ul>
+		<li>😄 is 128516</li>
+		<li>😍 is 128525</li>
+		<li>💗 is 128151</li>
+	</ul>
+
+	<h3>My First Emoji</h3>
+	<span>&</span>#128512;
+	<p>&#128512;</p>
+
+	<p>Since Emojis are characters, they can be copied, displayed, and sized just like any other character in HTML.</p>
+
+	<h3>Sized Emojis</h3>
+	<p style="font-size:48px">
+		&#128512; &#128516; &#128525; &#128151;
+	</p>
+
+	<h2><a href="https://www.w3schools.com/html/html_emojis.asp">Some Emoji Symbols in UTF-8</a></h2>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Tables</title>
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 15px;
+		}
+
+		th {
+			text-align: left;
+		}
+
+		table {
+			border-spacing: 5px;
+		}
+
+		#t01 {
+			width: 100%;
+			background-color: #f1f1c1;
+		}
+
+		#t01 tr:nth-child(even) {
+			background-color: #eee;
+		}
+
+		#t01 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+
+		#t01 th {
+			color: white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Tables</h1>
+	<p>HTML tables allow web developers to arrange data into rows and columns.</p>
+
+	<u><h2>Define an HTML Table</h2></u>
+	<p>The <span><</span>table> tag defines an HTML table.</p>
+	<p>Each table row is defined with a <span><</span>tr> tag. Each table header is defined with a <span><</span>th> tag. Each table data/cell is defined with a <span><</span>td> tag.</p>
+	<p>By default, the text in <span><</span>th> elements are bold and centered.</p>
+	<p>By default, the text in <span><</span>td> elements are regular and left-aligned.</p>
+	<p><b>Note:</b> The <span><</span>td> elements are the data containers of the table.<br>They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</p>
+
+	<h3>Example</h3>
+	<table style="width: 100%;">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Shubham</td>
+			<td>Jaiswal</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>Suyog</td>
+			<td>Malusure</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>Zaid</td>
+			<td>Patel</td>
+			<td>22</td>
+		</tr>
+	</table>
+
+	<u><h2>HTML Table - Add a Border</h2></u>
+	<p>To add a border to a table, use the CSS <mark>border</mark> property.</p>
+	<b><p>Remember to define borders for both the table and the table cells.</p></b>
+
+	<u><h2>HTML Table - Collapsed Borders</h2></u>
+	<p>To let the borders collapse into one border, add the CSS <mark>border-collapse</mark> property.</p>
+
+	<u><h2>HTML Table - Add Cell Padding</h2></u>
+	<p>Cell padding specifies the space between the cell content and its borders.</p>
+	<p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+	<p>To set the padding, use the CSS <mark>padding</mark> property.</p>
+
+	<u><h2>HTML Table - Left align Headings</h2></u>
+	<p>By default, table headings are bold and centered.</p>
+	<p>To left-align the table headings, use the CSS <mark>text-align</mark> property.</p>
+
+	<u><h2>HTML Table - Add Border Spacing</h2></u>
+	<p>Border spacing specifies the space between the cells.</p>
+	<p>To set the border spacing for a table, use the CSS <mark>border-spacing</mark> property.</p>
+
+	<b><p>Note: If the table has collapsed borders, border-spacing has no effect.</p></b>
+
+	<u><h2>HTML Table - Cell that Spans Many Columns</h2></u>
+	<p>To make a cell span more than one column, use the <mark>colspan</mark> attribute.</p>
+
+	<h3>Example</h3>
+	<table style="width: 100%;">
+		<tr>
+			<th>Name</th>
+			<th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>55577854</td>
+			<td>55577855</td>
+		</tr>
+	</table>
+
+	<u><h2>HTML Table - Cell that Spans Many Rows</h2></u>
+	<p>To make a cell span more than one row, use the <mark>rowspan</mark> attribute.</p>
+
+	<h3>Example</h3>
+	<table style="width: 100%;">
+		<tr>
+			<th>Name:</th>
+			<td>Bill Gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telephone:</th>
+			<td>55577854</td>
+		</tr>
+		<tr>
+			<td>55577855</td>
+		</tr>
+	</table>
+
+	<u><h2>HTML Table - Add a Caption</h2></u>
+	<p>To add a caption to a table, use the <span><</span>caption> tag.</p>
+
+	<h3>Example</h3>
+	<table style="width: 100%;">
+		<caption>Monthly savings</caption>
+		<tr>
+			<th>Month</th>
+			<th>Savings</th>
+		</tr>
+		<tr>
+			<td>January</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>February</td>
+			<td>$50</td>
+		</tr>
+	</table>
+
+	<b><p>Note: The <span><</span>caption> tag must be inserted immediately after the <span><</span>table> tag.</p></b>
+
+	<u><h2>A Special Style for One Table</h2></u>
+	<p>To define a special style for one particular table, add an <mark>id</mark> attribute to the table.</p>
+	<p>Now you can define a special style for this table.</p>
+
+	<h3>Example</h3>
+	<table id="t01">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+	</table>
+
+	<u><h2>Chapter Summary</h2></u>
+	<ul>
+		<li>Use the HTML <span><</span>table> element to define a table</li>
+		<li>Use the HTML <span><</span>tr> element to define a table row</li>
+		<li>Use the HTML <span><</span>td> element to define a table data</li>
+		<li>Use the HTML <span><</span>th> element to define a table heading</li>
+		<li>Use the HTML <span><</span>caption> element to define a table caption</li>
+		<li>Use the CSS <mark>border</mark> property to define a border</li>
+		<li>Use the CSS <mark>border-collapse</mark> property to collapse cell borders</li>
+		<li>Use the CSS <mark>padding</mark> property to add padding to cells</li>
+		<li>Use the CSS <mark>text-align</mark> property to align cell text</li>
+		<li>Use the CSS <mark>border-spacing</mark> property to set the spacing between cells</li>
+		<li>Use the <mark>colspan</mark> attribute to make a cell span many columns</li>
+		<li>Use the <mark>rowspan</mark> attribute to make a cell span many rows</li>
+		<li>Use the <mark>id</mark> attribute to uniquely define one table</li>
+	</ul>
+</body>
+</html>

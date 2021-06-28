@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Picture Element</title>
+</head>
+<body>
+	<h1>HTML <span><</span>picture> Element</h1>
+	<p>The HTML <span><</span>picture> element allows you to display different pictures for different devices or screen sizes.</p>
+
+	<u><h2>The HTML <span><</span>pciture> Element</h2></u>
+	<p>The HTML <span><</span>picture> element gives web developers more flexibility in specifying image resources.</p>
+	<p>The <span><</span>picture> element contains one or more <span><</span>source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.</p>
+	<p>Each <span><</span>source> element has a media attribute that defines when the image is the most suitable.</p>
+
+	<h3>Example</h3>
+	<picture>
+		<source media="(min-width: 650px)" srcset="image1.jpg">
+		<source media="(min-width: 465px)" srcset="image2.jpg" type="">
+		<img src="image3.jpg">
+	</picture>
+
+	<p><b>Note:</b> Always specify an <span><</span>img> element as the last child element of the <span><</span>picture> element. The <span><</span>img> element is used by browsers that do not support the <span><</span>picture> element, or if none of the <span><</span>source> tags match.</p>
+
+	<u><h2>When to use the Picture Element</h2></u>
+	<p>There are two main purposes for the <span><</span>picture> element:</p>
+	<h4>1. Bandwidth</h4>
+	<p>If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <span><</span>source> element with matching attribute values, and ignore any of the following elements.</p>
+
+	<h4>2. Format Support</h4>
+	<p>Some browsers or devices may not support all image formats. By using the <span><</span>picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.</p>
+
+	<p><b>Note:</b> The browser will use the first <span><</span>source> element with matching attribute values, and ignore any following <span><</span>source> elements.</p>
+</body>
+</html>

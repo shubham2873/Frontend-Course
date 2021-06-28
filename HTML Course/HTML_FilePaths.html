@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML File Paths</title>
+	<style type="text/css">
+		table, tr, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+
+		}
+		table tr:nth-child(even) {
+			background-color: #eee;
+		}
+
+		table tr:nth-child(odd) {
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML File Paths</h1>
+	<p>A file path describes the location of a file in a web site's folder structure.</p>
+
+	<u><h2>File Path Examples</h2></u>
+	<table>
+		<tr>
+			<th>Path</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><span><</span>img src="picture.jpg"></td>
+			<td>The "picture.jpg" file is located in the same folder as the current page</td>
+		</tr>
+		<tr>
+			<td><span><</span>img src="images/picture.jpg"></td>
+			<td>The "picture.jpg" file is located in the images folder in the current folder</td>
+		</tr>
+		<tr>
+			<td><span><</span>img src="/images/picture.jpg"></td>
+			<td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+		</tr>
+		<tr>
+			<td><span><</span>img src="../picture.jpg"></td>
+			<td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+		</tr>
+	</table>
+
+	<u><h2>HTML File Paths</h2></u>
+	<p>A file path describes the location of a file in a web site's folder structure.</p>
+	<p>File paths are used when linking to external files, like:</p>
+	<ul>
+		<li>Web pages</li>
+		<li>Images</li>
+		<li>Style sheets</li>
+		<li>JavaScripts</li>
+	</ul>
+
+	<u><h2>Absolute File Paths</h2></u>
+	<p>An absolute file path is the full URL to a file.</p>
+	<p><span><</span>img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"></p>
+
+	<u><h2>Relative File Paths</h2></u>
+	<p>A relative file path points to a file relative to the current page.</p>
+	<p><span><</span>img src="/images/picture.jpg" alt="Mountain"></p>
+
+	<u><h2>Best Practice</h2></u>
+	<p>It is best practice to use relative file paths (if possible).</p>
+	<p>When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.</p>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Id</title>
+	<style type="text/css">
+	/* Style the element with the id "myHeader" */
+		#myHeader1 {
+			background-color: lightblue;
+			color: black;
+			padding: 40px;
+			text-align: center;
+		}
+
+	/* Style all elements with the class name "city" */
+	.city {
+		background-color: tomato;
+		color: white;
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+	<h1>HTML id Attribute</h1>
+	<p>The HTML id attribute is used to specify a unique id for an HTML element.</p>
+	<p>You cannot have more than one element with the same id in an HTML document.</p>
+
+	<u><h2>Using The id Attribute</h2></u>
+	<p>The <mark>id</mark> attribute specifies a unique id for an HTML element. The value of the <mark>id</mark> attribute must be unique within the HTML document.</p>
+	<p>The <mark>id</mark> attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.</p>
+	<p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</p>
+	<p>In the following example we have an <span><</span>h1> element that points to the id name "myHeader". This <span></span>h1> element will be styled according to the #myHeader style definition in the head section.</p>
+
+	<h3>Example</h3>
+	<h1 id="myHeader1">My Header</h1>
+
+	<p><b>Note:</b> The id name is case sensitive!</p>
+	<p><b>Note:</b> The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</p>
+
+	<u><h2>Difference Between Class and ID</h2></u>
+	<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+
+	<!-- An element with a unique id -->
+	<h1 id="myHeader1">My Cities</h1>
+
+	<!-- Multiple elements with same class -->
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<u><h2>HTML Bookmarks with ID and Links</h2></u>
+	<p>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.</p>
+	<p>Bookmarks can be useful if your page is very long.</p>
+	<p>To use a bookmark, you must first create it, and then add a link to it.</p>
+	<p>Then, when the link is clicked, the page will scroll to the location with the bookmark.</p>
+
+	<h3>Example</h3>
+	<p><a href="#C4">Jump to Chapter 4</a></p>
+	<p><a href="#C10">Jump to Chapter 10</a></p>
+
+	<h2>Chapter 1</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 2</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 3</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2 id="C4">Chapter 4</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 5</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 6</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 7</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 8</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 9</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2 id="C10">Chapter 10</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 11</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 12</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 13</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 14</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 15</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 16</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 17</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 18</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 19</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 20</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 21</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 22</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 23</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<u><h2>Using The id Attribute in JavaScript</h2></u>
+	<p>The <mark>id</mark> attribute can also be used by JavaScript to perform some tasks for that specific element.</p>
+	<p>JavaScript can access an element with a specific id with the getElementById() method.</p>
+
+	<h3>Example</h3>
+	<h1 id="myHeader2">Hello World</h1>
+	<button onclick="displayResult()">Change text</button>
+
+	<script type="text/javascript">
+		function displayResult() {
+			document.getElementById("myHeader2").innerHTML = "Have a nice day!";
+		}
+	</script>
+
+	<u><h2>Chapter Summary</h2></u>
+	<ul>
+		<li>The <mark>id</mark> attribute is used to specify a unique id for an HTML element</li>
+		<li>The value of the <mark>id</mark> attribute must be unique within the HTML document</li>
+		<li>The <mark>id</mark> attribute is used by CSS and JavaScript to style/select a specific element</li>
+		<li>The value of the <mark>id</mark> attribute is case sensitive</li>
+		<li>The <mark>id</mark> attribute is also used to create HTML bookmarks</li>
+		<li>JavaScript can access an element with a specific id with the getElementById() method</li>
+	</ul>
+</body>
+</html>

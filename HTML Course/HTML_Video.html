@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Video</title>
+</head>
+<body>
+	<h1>HTML Video</h1>
+	<p>The HTML <span><</span>video> element is used to show a video on a web page.</p>
+
+	<u><h2>The HTML <span><</span>video> Element</h2></u>
+	<p>To show a video in HTML, use the <video> element:</p>
+
+	<h3>Example</h3>
+	<video width="320" height="240" controls>
+		<source src="movie.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+	</video>
+
+	<u><h2>How it Works</h2></u>
+	<p>The controls attribute adds video controls, like play, pause, and volume.</p>
+	<p>It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.</p>
+	<p>The <span><</span>source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</p>
+	<p>The text between the <span><</span>video> and <span><</span>/video> tags will only be displayed in browsers that do not support the <span><</span>video> element.</p>
+
+	<u><h2>HTML <span><</span>video> Autoplay</h2></u>
+	<p>To start a video automatically, use the autoplay attribute:</p>
+
+	<h3>Example</h3>
+	<video width="320" height="240" autoplay>
+		<source src="movie.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+	<p><b>Note:</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+	<p>Add <mark>muted</mark> after <mark>autoplay</mark> to let your video start playing automatically (but muted):</p>
+
+	<h3>Example</h3>
+	<video width="320" height="240" autoplay muted>
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+	</video>
+
+	<h4><a href="https://www.w3schools.com/html/html5_video.asp">HTML Video Formats and Media Types</a></h4>
+
+	<u><h2>HTML Video - Methods, Properties, and Events</h2></u>
+	<p>The HTML DOM defines methods, properties, and events for the <span><</span>video> element.</p>
+	<p>This allows you to load, play, and pause videos, as well as setting duration and volume.</p>
+	<p>There are also DOM events that can notify you when a video begins to play, is paused, etc.</p>
+</body>
+</html>

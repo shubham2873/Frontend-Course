@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Versus XHTML</title>
+</head>
+<body>
+	<h1>HTML Versus XHTML</h1>
+	<p>XHTML is a stricter, more XML-based version of HTML.</p>
+
+	<u><h2>What is XHTML?</h2></u>
+	<ul>
+		<li>XHTML stands for EXtensible HyperText Markup Language</li>
+		<li>XHTML is a stricter, more XML-based version of HTML</li>
+		<li>XHTML is HTML defined as an XML application</li>
+		<li>XHTML is supported by all major browsers</li>
+	</ul>
+
+	<u><h2>Why XHTML?</h2></u>
+	<p>XML is a markup language where all documents must be marked up correctly (be "well-formed").</p>
+	<p>XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). In addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup. So XHTML comes with a much stricter error handling.</p>
+
+	<u><h2>The Most Important Differences from HTML</h2></u>
+	<ul>
+		<li><span><</span>!DOCTYPE> is mandatory</li>
+		<li>The xmlns attribute in <span><</span>html> is mandatory</li>
+		<li><span><</span>html>, <span><</span>head>, <span><</span>title>, and <span><</span>body> are mandatory</li>
+		<li>Elements must always be properly nested</li>
+		<li>Elements must always be closed</li>
+		<li>Elements must always be in lowercase</li>
+		<li>Attribute names must always be in lowercase</li>
+		<li>Attribute values must always be quoted</li>
+		<li>Attribute minimization is forbidden</li>
+	</ul>
+
+	<u><h2>XHTML - <!DOCTYPE...> Is Mandatory</h2></u>
+	<p>An XHTML document must have an XHTML <!DOCTYPE> declaration.</p>
+	<p>The <span><</span>html>, <span><</span>head>, <span><</span>title>, and <span><</span>body> elements must also be present, and the xmlns attribute in <span><</span>html> must specify the xml namespace for the document.</p>
+
+	<h3>Example</h3>
+<pre>
+<span><</span>!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<span><</span>html xmlns="http://www.w3.org/1999/xhtml">
+<span><</span>head>
+  <span><</span>title>Title of document</title>
+<span><</span>/head>
+<span><</span>body>
+
+  some content here...
+
+<span><</span>/body>
+<span><</span>/html>	
+</pre>
+
+	<u><h2>XHTML Elements Must be Properly Nested</h2></u>
+	<p>In XHTML, elements must always be properly nested within each other, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<p><span><</span>b><span><</span>i>Some text<span><</span>/i><span><</span>/b></p>
+
+	<h4>Wrong:</h4>
+	<p><span><</span>b><span><</span>i>Some text<span><</span>/b><span><</span>/i></p>
+
+	<u><h2>XHTML Elements Must Always be Closed</h2></u>
+	<p>In XHTML, elements must always be closed, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<span><</span>p>This is a paragraph<span><</span>/p>
+
+	<h4>Correct:</h4>
+	<span><</span>p>This is a paragraph
+
+	<u><h2>XHTML Empty Elements Must Always be Closed</h2></u>
+	<p>In XHTML, empty elements must always be closed, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	A break: <span><</span>br />
+	A horizontal rule: <span><</span>hr />
+	An image: <span><</span>img src="image.jpg" alt="image" />
+
+	<h4>Wrong:</h4>
+	A break: <span><</span>br>
+	A horizontal rule: <span><</span>hr>
+	An image: <span><</span>img src="image.jpg" alt="image">
+
+	<u><h2>XHTML Elements Must be in Lowercase</h2></u>
+	<p>In XHTML, element names must always be in lowercase, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<span><</span>body>
+		<span><</span>p>This is a paragraph<span><</span>/p>
+	<span><</span>/body>
+
+	<h4>Wrong:</h4>
+	<span><</span>BODY>
+		<span><</span>P>This is a paragraph<span><</span>/P>
+	<span><</span>/BODY>
+
+	<u><h2>XHTML Attribute Names Must be in Lowercase</h2></u>
+	<p>In XHTML, attribute names must always be in lowercase, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<span><</span>a href="index.html">HTML Tutorial</a>
+
+	<h4>Wrong:</h4>
+	<span><</span>a HREF="index.html">HTML Tutorial</a>
+
+	<u><h2>XHTML Attribute Values Must be Quoted</h2></u>
+	<p>In XHTML, attribute values must always be quoted, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<span><</span>a href="index.html">HTML Tutorial</a>
+
+	<h4>Wrong:</h4>
+	<span><</span>a href=index.html>HTML Tutorial</a>
+
+	<u><h2>XHTML Attribute Minimization is Forbidden</h2></u>
+	<p>In XHTML, attribute minimization is forbidden:</p>
+
+	<h3>Example</h3>
+	<h4>Correct:</h4>
+	<input type="checkbox" name="vehicle" value="car" checked="checked" />
+	<input type="text" name="lastname" disabled="disabled" />
+
+	<h4>Wrong:</h4>
+	<input type="checkbox" name="vehicle" value="car" checked />
+	<input type="text" name="lastname" disabled />
+</body>
+</html>

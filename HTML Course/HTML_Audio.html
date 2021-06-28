@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Audio</title>
+</head>
+<body>
+	<h1>HTML Audio</h1>
+	<p>The HTML <span><</span>audio> element is used to play an audio file on a web page.</p>
+
+	<u><h2>The HTML <span><</span>audio> Element</h2></u>
+	<p>To play an audio file in HTML, use the <span><</span>audio> element:</p>
+
+	<h3>Example</h3>
+	<audio controls>
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+	<u><h2>HTML Audio - How It Works</h2></u>
+	<p>The controls attribute adds audio controls, like play, pause, and volume.</p>
+	<p>The <span><</span>source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+	<p>The text between the <span><</span>audio> and <span><</span>/audio> tags will only be displayed in browsers that do not support the <span><</span>audio> element.</p>
+
+	<u><h2>HTML <span><</span>audio> Autoplay</h2></u>
+	<p>To start an audio file automatically, use the autoplay attribute:</p>
+
+	<h3>Example</h3>
+	<audio controls autoplay>
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+	<p><b>Note:</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+
+	<p>Add <mark>muted</mark> after <mark>autoplay</mark> to let your audio file start playing automatically (but muted):</p>
+
+	<h3>Example</h3>
+	<audio controls autoplay muted>
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+	<h3><a href="https://www.w3schools.com/html/html5_audio.asp">HTML Audio Formats and Media Types</a></h3>
+
+	<u><h2>HTML Audio - Methods, Properties, and Events</h2></u>
+	<p>The HTML DOM defines methods, properties, and events for the <span><</span>audio> element.</p>
+	<p>This allows you to load, play, and pause audios, as well as set duration and volume.</p>
+	<p>There are also DOM events that can notify you when an audio begins to play, is paused, etc.</p>
+</body>
+</html>

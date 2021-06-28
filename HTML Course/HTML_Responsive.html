@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Responsive Web Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		.left {
+			background-color: #2196F3;
+			padding: 20px;
+			float: left;
+			width: 20%;
+		}
+
+		.main {
+			background-color: #f1f1f1;
+			padding: 20px;
+			float: left;
+			width: 60%;
+		}
+
+		.right {
+			background-color: #4CAF50;
+			padding: 20px;
+			float: left;
+			width: 20%;
+		}
+
+		@media screen and (max-width: 800px) {
+			.left, .main, .right {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Responsive Web Design</h1>
+	<p>Responsive web design is about creating web pages that look good on all devices!</p>
+	<p>A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+
+	<u><h2>What is Responsive Web Design?</h2></u>
+	<p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).</p>
+
+	<u><h2>Setting The Viewport</h2></u>
+	<p>To create a responsive website, add the following <span><</span>meta> tag to all your web pages.</p>
+	<b><span><</span>meta name="viewport" content="width=device-width, initial-scale=1.0"></b>
+	<p>This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.</p>
+
+	<u><h2>Responsive Images</h2></u>
+	<p>Responsive images are images that scale nicely to fit any browser size.</p>
+
+	<h3>Using the width Property</h3>
+	<p>If the CSS <mark>width</mark> property is set to 100%, the image will be responsive and scale up and down.</p>
+	<img src="image1.jpg" style="width: 100%;">
+	
+	<p>Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.</p>
+
+	<h3>Using the max-width Property</h3>
+	<p>If the <mark>max-width</mark> property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size.</p>
+	<img src="image1.jpg" style="max-width: 100%; height: auto;">
+
+	<u><h2>Show Different Images Depending on Browser Width</h2></u>
+	<p>The HTML <span><</span>picture> element allows you to define different images for different browser window sizes.</p>
+	<p>Resize the browser window to see how the image below change depending on the width.</p>
+	<picture>
+		<source src="image1.jpg" media="(max-width: 600px)">
+		<source src="image2.jpg" media="(max-width: 1500px)">
+		<source src="image3.jpg">
+		<img src="workplace.jpg" alt="workplace">
+	</picture>
+
+	<u><h2>Responsive Text Size</h2></u>
+	<p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
+	<p>That way the text size will follow the size of the browser window:</p>
+	<h1 style="font-size: 10vw;">Hello World</h1>
+	<b>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</b>
+
+	<u><h2>Media Queries</h2></u>
+	<p>In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+	<p>With media queries you can define completely different styles for different browser sizes.</p>
+	<p>Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:</p>
+
+	<h3>Example</h3>
+	<div class="left">
+		<p>Left Menu</p>
+	</div>
+	<div class="main">
+		<p>Main Content</p>
+	</div>
+	<div class="right">
+		<p>Right Content</p>
+	</div>
+</body>
+</html>

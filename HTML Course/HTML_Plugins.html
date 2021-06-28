@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Plugins</title>
+</head>
+<body>
+	<h1>HTML Plug-ins</h1>
+	<p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
+
+	<u><h2>Plug-ins</h2></u>
+	<p>Plug-ins were designed to be used for many different purposes:</p>
+	<ul>
+		<li>To run Java applets</li>
+		<li>To run Microsoft ActiveX controls</li>
+		<li>To display Flash movies</li>
+		<li>To display maps</li>
+		<li>To scan for viruses</li>
+		<li>To verify a bank id</li>
+	</ul>
+
+	<h4>Warning !</h4>
+	<p>Most browsers no longer support Java Applets and Plug-ins.</p>
+	<p>ActiveX controls are no longer supported in any browsers.</p>
+	<p>The support for Shockwave Flash has also been turned off in modern browsers.</p>
+
+	<u><h2>The <span><</span>object> Element</h2></u>
+	<p>The <span><</span>object> element is supported by all browsers.</p>
+	<p>The <span><</span>object> element defines an embedded object within an HTML document.</p>
+	<p>It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML:</p>
+
+	<h3>Example</h3>
+	<object width="100%" height="500px" data="index.html"></object>
+	
+	<p>Or images if you like:</p>
+	<object data="logo.png"></object>
+
+	<u><h2>The <span><</span>embed> Element</h2></u>
+	<p>The <span><</span>embed> element is supported in all major browsers.</p>
+	<p>The <span><</span>embed> element also defines an embedded object within an HTML document.</p>
+	<p>Web browsers have supported the <span><</span>embed> element for a long time. However, it has not been a part of the HTML specification before HTML5.</p>
+
+	<h3>Example</h3>
+	<embed src="logo.png">
+
+	<p>Note that the <span><</span>embed> element does not have a closing tag. It can not contain alternative text.</p>
+
+	<p>The <span><</span>embed> element can also be used to include HTML in HTML:</p>
+
+	<h3>Example</h3>
+	<embed width="100%" height="500px" src="index.html">
+</body>
+</html>

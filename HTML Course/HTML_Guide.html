@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Style Guide and Coding Conventions</title>
+</head>
+<body>
+	<h1>HTML Style Guide and Coding Conventions</h1>
+	<p>A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.</p>
+	<p>Here are some guidelines and tips for creating good HTML code.</p>
+
+	<u><h2>Always Declare Document Type</h2></u>
+	<p>Always declare the document type as the first line in your document.</p>
+	<p>The correct document type for HTML is:</p>
+	<b><span><</span>!DOCTYPE html></b>
+
+	<u><h2>Use Lowercase Elements Names</h2></u>
+	<p>HTML allows mixing uppercase and lowercase letters in element names.</p>
+	<p>However, we recommend using lowercase element names, because:</p>
+	<ul>
+		<li>Mixing uppercase and lowercase names looks bad</li>
+		<li>Developers normally use lowercase names</li>
+		<li>Lowercase looks cleaner</li>
+		<li>Lowercase is easier to write</li>
+	</ul>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p>
+		<span><</span>body> <br>
+		<span><</span>p> This is a paragraph.<span><</span>/p> <br>
+		<span><</span>/body>
+	</p>
+
+	<h4>Bad:</h4>
+	<p>
+		<span><</span>BODY> <br>
+		<span><</span>P> This is a paragraph.<span><</span>/P> <br>
+		<span><</span>/BODY>
+	</p>
+
+	<u><h2>Close All HTML Elements</h2></u>
+	<p>In HTML, you do not have to close all elements (for example the <span><</span>p> element).</p>
+	<p>However, we strongly recommend closing all HTML elements, like this:</p>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p>
+		<span><</span>section> <br>
+		<span><</span>p> This is a paragraph.<span><</span>/p> <br>
+		<span><</span>p> This is a paragraph.<span><</span>/p> <br>
+		<span><</span>/section>
+	</p>
+
+	<h4>Bad:</h4>
+	<p>
+		<span><</span>section> <br>
+		<span><</span>p> This is a paragraph.<br>
+		<span><</span>p> This is a paragraph.<br>
+		<span><</span>/section>
+	</p>
+
+	<u><h2>Use Lowercase Attribute Names</h2></u>
+	<p>HTML allows mixing uppercase and lowercase letters in attribute names.</p>
+	<p>However, we recommend using lowercase attribute names, because:</p>
+	<ul>
+		<li>Mixing uppercase and lowercase names looks bad</li>
+		<li>Developers normally use lowercase names</li>
+		<li>Lowercase look cleaner</li>
+		<li>Lowercase are easier to write</li>
+	</ul>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p><span><</span>a href="index.html">HTML Tutorial<span><</span>/a></p>
+
+	<h4>Bad:</h4>
+	<p><span><</span>a HREF="index.html">HTML Tutorial<span><</span>/a></p>
+
+	<u><h2>Always Quote Attributes Values</h2></u>
+	<p>HTML allows attribute values without quotes.</p>
+	<p>However, we recommend quoting attribute values, because:</p>
+	<ul>
+		<li>Developers normally quote attribute values</li>
+		<li>Quoted values are easier to read</li>
+		<li>You MUST use quotes if the value contains spaces</li>
+	</ul>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p><span><</span>table class="striped"></p>
+
+	<h4>Bad:</h4>
+	<p><span><</span>table class=striped></p>
+
+	<h4>Very bad:</h4>
+	<p><span><</span>table class=table striped></p>
+
+	<u><h2>Always Specify alt, width and height for Images</h2></u>
+	<p>Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed.</p>
+	<p>Also, always define the width and height of images. This reduces flickering, because the browser can reserve space for the image before loading.</p>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p><span><</span>img src="image.jpg" alt="image" style="width:100px; height:100px;"></p>
+
+	<h4>Bad:</h4>
+	<p><span><</span>img src="image.jpg"></p>
+
+	<u><h2>Spaces and Equal Signs</h2></u>
+	<p>HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.</p>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+	<p><span><</span>link rel="stylesheet" href="style.css"></p>
+
+	<h4>Bad:</h4>
+	<p><span><</span>link rel = "stylesheet" href = "style.css"></p>
+
+	<u><h2>Avoid Long Code Lines</h2></u>
+	<p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+	<p>Try to avoid too long code lines.</p>
+
+	<u><h2>Blank Lines and Indentation</h2></u>
+	<p>Do not add blank lines, spaces, or indentations without a reason.</p>
+	<p>For readability, add blank lines to separate large or logical code blocks.</p>
+	<p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+
+	<h3>Example</h3>
+	<h4>Good:</h4>
+<pre>
+<span><</span>body>
+
+<span><</span>h1>Famous Cities<span><</span>/h1>
+
+<span><</span>h2>Tokyo<span><</span>/h2>
+<span><</span>p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.
+It is the seat of the Japanese government and the Imperial Palace,
+and the home of the Japanese Imperial Family.<span><</span>/p>
+
+<span><</span>/body>
+</pre>
+
+	<h4>Bad:</h4>
+<pre>
+<span><</span>body>
+
+	<span><</span>h1>Famous Cities<span><</span>/h1>
+
+	<span><</span>h2>Tokyo<span><</span>/h2>
+
+	<span><</span>p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+	and the most populous metropolitan area in the world.
+	It is the seat of the Japanese government and the Imperial Palace,
+	and the home of the Japanese Imperial Family.<span><</span>/p>
+
+<span><</span>/body>
+</pre>
+
+	<h3>Good Table Example:</h3>
+<pre>
+<span><</span>table>
+	<span><</span>tr>
+		<span><</span>th>Name<span><</span>/th>
+		<span><</span>th>Description<span><</span>/th>
+	<span><</span>/tr>
+	<span><</span>tr>
+		<span><</span>td>A<span><</span>/td>
+		<span><</span>td>Description of A<span><</span>/td>
+	<span><</span>/tr>
+	<span><</span>tr>
+		<span><</span>td>B<span><</span>/td>
+		<span><</span>td>Description of B<span><</span>/td>
+	<span><</span>/tr>
+<span><</span>/table>
+</pre>
+
+	<h4>Good List Example:</h4>
+<pre>
+<span><</span>ul>
+	<span><</span>li>London</li>
+	<span><</span>li>Paris</li>
+	<span><</span>li>Tokyo</li>
+<span><</span>/ul>
+</pre>
+
+	<u><h2>Never Skip the <span><</span>title> Element</h2></u>
+	<p>The <span><</span>title> element is required in HTML.</p>
+	<p>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+	<p>The <span><</span>title> element:</p>
+	<ul>
+		<li>defines a title in the browser toolbar</li>
+		<li>provides a title for the page when it is added to favorites</li>
+		<li>displays a title for the page in search-engine results</li>
+	</ul>
+	<p>So, try to make the title as accurate and meaningful as possible:</p>
+	<b><span><</span>title>HTML Style Guide and Coding Conventions<span><</span>title></b>
+
+	<u><h2>Omitting <span><</span>html> and <span><</span>body>?</h2></u>
+	<p>An HTML page will validate without the <span><</span>html> and <span><</span>body> tags:</p>
+
+	<h3>Example</h3>
+<pre>
+<span><</span>!DOCTYPE html>
+<span><</span>head>
+  <span><</span>title>Page Title<span><</span>/title>
+<span><</span>/head>
+
+<span><</span>h1>This is a heading<span><</span>/h1>
+<span><</span>p>This is a paragraph.<span><</span>/p>
+</pre>
+
+	<p>However, we strongly recommend to always add the <span><</span>html> and <span><</span>body> tags!</p>
+	<p>Omitting <span><</span>body> can produce errors in older browsers.</p>
+	<p>Omitting <span><</span>html> and <span><</span>body> can also crash DOM and XML software.</p>
+
+	<u><h2>Omitting <span><</span>head>?</h2></u>
+	<p>The HTML <span><</span>head> tag can also be omitted.</p>
+	<p>Browsers will add all elements before <span><</span>body>, to a default <span><</span>head> element.</p>
+
+	<h3>Example</h3>
+<pre>
+<span><</span>!DOCTYPE html>
+<span><</span>html>
+<span><</span>title>Page Title<span><</span>/title>
+<span><</span>body>
+
+<span><</span>h1>This is a heading<span><</span>/h1>
+<span><</span>p>This is a paragraph.<span><</span>/p>
+
+<span><</span>/body>
+<span><</span>/html>
+</pre>
+
+	<p>However, we recommend using the <span><</span>head> tag.</p>
+
+	<u><h2>Close Empty HTML Elements?</h2></u>
+	<p>In HTML, it is optional to close empty elements.</p>
+
+	<h3>Example</h3>
+	<h4>Allowed:</h4>
+	<p><span><</span>meta charset="utf-8"></p>
+
+	<h4>Also Allowed:</h4>
+	<p><span><</span>meta charset="utf-8" /></p>
+
+	<p>If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML.</p>
+
+	<u><h2>Add the lang Attribute</h2></u>
+	<p>You should always include the lang attribute inside the <span><</span>html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+
+	<h3>Example</h3>
+<pre>
+<span><</span>!DOCTYPE html>
+<span><</span>html lang="en-us">
+<span><</span>head>
+	<span><</span>title>Page Title<span><</span>/title>
+<span><</span>/head>
+<span><</span>body>
+
+<span><</span>h1>This is a heading<span><</span>/h1>
+<span><</span>p>This is a paragraph.<span><</span>/p>
+
+<span><</span>/body>
+<span><</span>/html>
+</pre>
+
+	<u><h2>Meta Data</h2></u>
+	<p>To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <span><</span>meta charset="charset"> should be defined as early as possible in an HTML document:</p>
+
+	<h3>Example</h3>
+<pre>
+<span><</span>!DOCTYPE html>
+<span><</span>html lang="en-us">
+<span><</span>head>
+	<span><</span>meta charset="utf-8">
+	<span><</span>title>Page Title<span><</span>/title>
+<span><</span>/head>
+</pre>
+
+	<u><h2>Setting The Viewport</h2></u>
+	<p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.</p>
+	<p>You should include the following <span><</span>meta> element in all your web pages:</p>
+	<b><span><</span>meta name="viewport" content="width=device-width, initial-scale=1.0"></b>
+	<p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+	<p>The <smark>width=device-width</smark> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+	<p>The <mark>initial-scale=1.0</mark> part sets the initial zoom level when the page is first loaded by the browser.</p>
+
+	<u><h2>HTML Comments</h2></u>
+	<p>Short comments should be written on one line, like this:</p>
+	<span><</span>!-- This is a comment -->
+	<p>Comments that spans more than one line, should be written like this:</p>
+<pre>
+<span><</span>!--
+This is a long comment example. This is a long comment example.
+This is a ling comment example. This is a long comment example.
+-->
+</pre>
+	
+	<p>Long comments are easier to observe if they are indented with two spaces.</p>
+
+	<u><h2>Using Style Sheets</h2></u>
+	<p>Use simple syntax for linking to style sheets (the type attribute is not necessary):</p>
+
+	<h3>Example</h3>
+	<span><</span>link rel="stylesheet" href="styles.css">
+
+	<p>Short CSS rules can be written compressed, like this:</p>
+	<b>p.intro {font-family:Verdana; font-size:16em;}</b>
+
+	<p>Long CSS rules should be written over multiple lines:</p>
+<b><pre>
+body {
+	background-color: lightgrey;
+	font-family: "Arial Black", Helvetica, sans-serif;
+	font-size: 16em;
+	color: black;
+}
+</pre></b>
+
+	<ul>
+		<li>Place the opening bracket on the same line as the selector</li>
+		<li>Use one space before the opening bracket</li>
+		<li>Use two spaces of indentation</li>
+		<li>Use semicolon after each property-value pair, including the last</li>
+		<li>Only use quotes around values if the value contains spaces</li>
+		<li>Place the closing bracket on a new line, without leading spaces</li>
+	</ul>
+
+	<u><h2>Loading JavaScript in HTML</h2></u>
+	<p>Use simple syntax for loading external scripts (the type attribute is not necessary):</p>
+	<b><span><</span>script src="myscript.js"</b>
+
+	<u><h2>Accessing HTML Elements with JavaScript</h2></u>
+	<p>Using "untidy" HTML code can result in JavaScript errors.</p>
+	<p>These two JavaScript statements will produce different results:</p>
+
+	<p>getElementById("Demo").innerHTML = "Hello";</p>
+
+	<p>getElementById("demo").innerHTML = "Hello";</p>
+
+	<u><h2>Use Lower Case File Names</h2></u>
+	<p>Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".</p>
+	<p>Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".</p>
+	<p>If you use a mix of uppercase and lowercase, you have to be aware of this.</p>
+	<p>If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!</p>
+	<p>To avoid these problems, always use lowercase file names!</p>
+
+	<u><h2>File Extensions</h2></u>
+	<p>HTML files should have a .html extension (.htm is allowed).</p>
+	<p>CSS files should have a .css extension.</p>
+	<p>JavaScript files should have a .js extension.</p>
+
+	<u><h2>Differences Between .htm and .html?</h2></u>
+	<p>There is no difference between the .htm and .html file extensions!</p>
+	<p>Both will be treated as HTML by any web browser and web server.</p>
+
+	<u><h2>Default Filenames</h2></u>
+	<p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".</p>
+	<p>If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".</p>
+	<p>However, servers can be configured with more than one default filename; usually you can set up as many default filenames as you want.</p>
+</body>
+</html>

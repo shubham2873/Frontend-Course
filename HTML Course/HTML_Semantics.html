@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Semantic Elements</title>
+	<style type="text/css">
+		.all-browsers {
+			margin: 0;
+			padding: 5px;
+			background-color: lightgray;
+		}
+
+		.all-browsers > h1, .browser {
+			margin: 10px;
+			padding: 5px;
+		}
+
+		.browser {
+			background: white;
+		}
+
+		.browser > h2, p {
+			margin: 4px;
+			font-size: 90%;
+		}
+
+		aside {
+			width: 30%;
+			padding-left: 15px;
+			margin-left: 15px;
+			float: right;
+			font-style: italic;
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Semantics Elements</h1>
+	<p>Semantic elements = elements with a meaning.</p>
+
+	<u><h2>What are Semantics Elements?</h2></u>
+	<p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+	<p>Examples of non-semantic elements: <span><</span>div> and <span><</span>span> - Tells nothing about its content.</p>
+	<p>Examples of semantic elements: <span><</span>form>, <span><</span>table>, and <span><</span>article> - Clearly defines its content.</p>
+
+	<u><h2>Semantic Elements in HTML</h2></u>
+	<p>Many web sites contain HTML code like: <span><</span>div id="nav"> <span><</span>div class="header"> <span><</span>div id="footer"> to indicate navigation, header, and footer.</p>
+	<p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
+	<ul>
+		<li><span><</span>article></li>
+		<li><span><</span>aside></li>
+		<li><span><</span>details></li>
+		<li><span><</span>figcaption></li>
+		<li><span><</span>figure></li>
+		<li><span><</span>footer></li>
+		<li><span><</span>header></li>
+		<li><span><</span>main></li>
+		<li><span><</span>mark></li>
+		<li><span><</span>nav></li>
+		<li><span><</span>section></li>
+		<li><span><</span>summary></li>
+		<li><span><</span>time></li>
+	</ul>
+
+	<u><h2>HTML <span><</span>section> Element</h2></u>
+	<p>The <span><</span>section> element defines a section in a document.</p>
+	<p>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+	<p>A web page could normally be split into sections for introduction, content, and contact information.</p>
+
+	<h3>Example</h3>
+	<section>
+		<h1>WWF</h1>
+		<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+	</section>
+	<section>
+		<h1>WWF's Panda symbol</h1>
+		<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+	</section>
+
+	<u><h2>HTML <span><</span>article> Element</h2></u>
+	<p>The <span><</span>article> element specifies independent, self-contained content.</p>
+	<p>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</p>
+	<p>Examples of where an <span><</span>article> element can be used:</p>
+	<ul>
+		<li>Forum post</li>
+		<li>Blog post</li>
+		<li>Newspaper article</li>
+	</ul>
+
+	<h3>Example</h3>
+	<article class="all-browsers">
+		<h1>Most Popular Browsers</h1>
+		<article class="browser">
+			<h2>Google Chrome</h2>
+			<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+		</article>
+		<article class="browser">
+			<h2>Mozilla Firefox</h2>
+			<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+		</article>
+		<article class="browser">
+			<h2>Microsoft Edge</h2>
+			<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+		</article>
+	</article>
+
+	<u><h2>Nesting <span><</span>article> in <span><</span>section> or Vice Versa?</h2></u>
+	<p>The <span><</span>article> element specifies independent, self-contained content.</p>
+	<p>The <span><</span>section> element defines section in a document.</p>
+	<p>Can we use the definitions to decide how to nest those elements? No, we cannot!</p>
+	<p>So, you will find HTML pages with <span><</span>section> elements containing <span><</span>article> elements, and <article> elements containing <span><</span>section> elements.</p>
+
+	<u><h2>HTML <span><</span>header> Element</h2></u>
+	<p>The <span><</span>header> element represents a container for introductory content or a set of navigational links.</p>
+	<p>A <span><</span>header> element typically contains:</p>
+	<ul>
+		<li>one or more heading elements (<span><</span>h1> - <span><</span>h6>)</li>
+		<li>logo or icon</li>
+		<li>authorship information</li>
+	</ul>
+	<p><b>Note:</b> You can have several <span><</span>header> elements in one HTML document. However, <span><</span>header> cannot be placed within a <span><</span>footer>, <span><</span>address> or another <span><</span>header> element.</p>
+
+	<h3>Example</h3>
+	<article>
+		<header>
+			<h1>What Does WFF Do?</h1>
+			<p>WWF's mission:</p>
+		</header>
+		<p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+	</article>
+
+	<u><h2>HTML <span><</span>footer> Element</h2></u>
+	<p>The <span><</span>footer> element defines a footer for a document or section.</p>
+	<p>A <span><</span>footer> element typically contains:</p>
+	<ul>
+		<li>authorship information</li>
+		<li>copyright information</li>
+		<li>contact information</li>
+		<li>sitemap</li>
+		<li>back to top lonks</li>
+		<li>related documents</li>
+	</ul>
+	<p>You can have several <span><</span>footer> elements in one document.</p>
+
+	<h3>Example</h3>
+	<footer>
+		<p>Author: Hega Refsnes</p>
+		<p><a href="mailto:hega@example.com">hega@example.com</a></p>
+	</footer>
+
+	<u><h2>HTML <span><</span>nav> Element</h2></u>
+	<p>The <span><</span>nav> element defines a set of navigation links.</p>
+	<p>Notice that NOT all links of a document should be inside a <span><</span>nav> element. The <span></span>nav> element is intended only for major block of navigation links.</p>
+	<p>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</p>
+
+	<h3>Example</h3>
+	<nav>
+		<a href="/html/">HTML</a>
+		<a href="/css/">CSS</a>
+		<a href="/js/">JavaScript</a>
+		<a href="/jquery/">jQuery</a>
+	</nav>
+
+	<u><h2>HTML <span><</span>aside> Element</h2></u>
+	<p>The <span><</span>aside> element defines some content aside from the content it is placed in (like a sidebar).</p>
+	<p>The <span><</span>aside> content should be indirectly related to the surrounding content.</p>
+
+	<h3>Example</h3>
+	<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+	<aside>
+		<h4>Epcot Center</h4>
+		<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+	</aside>
+
+	<u><h2>HTML <span><</span>figure> and <span><</span>figcaption> Elements</h2></u>
+	<p>The <span><</span>figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+	<p>The <span><</span>figcaption> tag defines a caption for a <span><</span>figure> element. The <span><</span>figcaption> element can be placed as the first or as the last child of a <span><</span>figure> element.</p>
+	<p>The <span><</span>img> element defines the actual image/illustration.</p>
+
+	<h3>Example</h3>
+	<figure>
+		<img src="image1.jpg" alt="Italian">
+		<figcaption>Fig1. Italian Image</figcaption>
+	</figure>
+
+	<u><h2>Why Semantic Elements?</h2></u>
+	<p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</p>
+</body>
+</html>

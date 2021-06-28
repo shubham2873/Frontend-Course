@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Links</title>
+</head>
+<body>
+	<h1>HTML Links</h1>
+	<p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+
+	<u><h2>HTML Links - Hyperlink</h2></u>
+	<p>HTML links are hyperlinks.</p>
+	<p>You can click on a link and jump to another document.</p>
+	<p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+	<p><b>Note:</b> A link does not have to be text. A link can be an image or any other HTML element!</p>
+
+	<u><h2>HTML Links - Syntax</h2></u>
+	<p>The HTML <span><</span>a> tag defines a hyperlink. It has the following syntax:</p>
+	<b><p><span><</span>a href="url">link text<span><</span>/a></p></b>
+	<p>The most important attribute of the <span><</span>a> element is the href attribute, which indicates the link's destination.</p>
+	<p>The link text is the part that will be visible to the reader.</p>
+	<p>Clicking on the link text, will send the reader to the specified URL address.</p>
+	<a href="index.html">Visit Home Page</a>
+	<p>By default, links will appear as follows in all browsers:</p>
+	<ul>
+		<li>An unvisited link is underlined and blue</li>
+		<li>A visited link is underlined and purple</li>
+		<li>An active link is underlined and red</li>
+	</ul>
+	<p><b>Tip:</b> Links can of course be styled with CSS, to get another look!</p>
+
+	<u><h2>HTML Links - The target Attribute</h2></u>
+	<p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+	<p>The <mark>target</mark> attribute specifies where to open the linked document.</p>
+	<p>The <mark>target</mark> attribute can have one of the following values:</p>
+	<ul>
+		<li><mark>_self</mark> - Default. Opens the document in the same window/tab as it was clicked</li>
+		<a href="index.html">Visit Home Page</a>
+		<li><mark>_blank</mark> - Opens the document in a new window or tab</li>
+		<a href="index.html" target="_blank">Visit Home Page</a>
+		<li><mark>_parent</mark> - Opens the document in the parent frame</li>
+		<a href="index.html" target="_parent">Visit Home Page</a>
+		<li><mark>_top</mark> - Opens the document in the full body of the window</li>
+		<a href="index.html" target="_top">Visit Home Page</a>
+	</ul>
+
+	<u><h2>Absolute URLs vs. Relative URLs</h2></u>
+	<p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+	<p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).</p>
+
+	<h3>Absolute URLs</h3>
+	<p><span><</span>a href="https://www.example.com/">Example<span><</span>/a></p>
+
+	<h3>Relative URLs</h3>
+	<p><span><</span>a href="index.html">HomePage<span><</span>/a></p>
+
+	<h2>HTML Links - Use an Image as a Link</h2>
+	<p>To use an image as a link, just put the <span><</span>img> tag inside the <span><</span>a> tag.</p>
+	<a href="index.html">
+		<img src="logo.png" style="width: 100px; height: 100px;">
+	</a>
+
+	<u><h2>Link to an Email Address</h2></u>
+	<p>Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to create a link that opens the user's email program (to let them send a new email).</p>
+	<a href="mailto:shubhamjaiswal3417@gmail.com">Send email</a>
+
+	<u><h2>Button as a Link</h2></u>
+	<p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+	<p>JavaScript allows you to specify what happens at certain events, such as a click of a button.</p>
+	<button onclick="document.location='index.html'">HTML Tutorial</button>
+
+	<u><h2>Link Titles</h2></u>
+	<p>The <mark>title</mark> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+	<a href="index.html" title="Go to HTML Tutorial">Visit our HTML Course</a>
+
+	<u><h2>Chapter Summary</h2></u>
+	<ul>
+		<li>Use the <span><</span>a> element to define a link</li>
+		<li>Use the <mark>href</mark> attribute to define the link address</li>
+		<li>Use the <mark>target</mark> attribute to define where to open the linked document</li>
+		<li>Use the <span><</span>img> element (inside <span><</span>a>) to use an image as a link</li>
+		<li>Use the <mark>mailto:</mark> scheme inside the <mark>href</mark> attribute to create a link that opens the user's email program</li>
+	</ul>
+</body>
+</html>

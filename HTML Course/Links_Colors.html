@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Links Colors</title>
+	<style type="text/css">
+		#a1:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		#a1:visited {
+			color: pink;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		#a1:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		#a1:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		#a2:link, #a2:visited {
+			background-color: #f44336;
+			color: white;
+			padding: 15px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		#a2:hover, #a2:active {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Links - Different Colors</h1>
+	<p>An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.</p>
+
+	<u><h2>HTML Link Colors</h2></u>
+	<p>By default, a link will appear like this (in all browsers):</p>
+	<ul>
+		<li>An unvisited link is underlined and blue</li>
+		<li>A visited link is underlined and purple</li>
+		<li>An active link is underlined and red</li>
+	</ul>
+	<p>You can change the link state colors, by using CSS:</p>
+
+	<h3>Example</h3>
+	<p>Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+	<a id="a1" href="index.html" target="_blank">HTML Tutorial</a>
+
+	<u><h2>Link Buttons</h2></u>
+	<p>A link can also be styled as a button, by using CSS:</p>
+	<a id="a2" href="index.html" target="_blank">HTML Tutorial</a>
+</body>
+</html>

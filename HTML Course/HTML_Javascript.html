@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML JavaScript</title>
+</head>
+<body>
+	<h1>HTML JavaScript</h1>
+	<p>JavaScript makes HTML pages more dynamic and interactive.</p>
+
+	<u><h2>The HTML <span><</span>script> Tag</h2></u>
+	<p>The HTML <span><</span>script> tag is used to define a client-side script (JavaScript).</p>
+	<p>The <span><</span>script> element either contains script statements, or it points to an external script file through the <mark>src</mark> attribute.</p>
+	<p>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p>
+	<p>To select an HTML element, JavaScript most often uses the <span>document.getElementById()</span> method.</p>
+	<p>This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo".</p>
+
+	<h3>Example</h3>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+	</script>
+
+	<u><h2>A Taste of JavaScript</h2></u>
+	<p>Here are some examples of what JavaScript can do.</p>
+
+	<h3>Example 1 - JavaScript can change content</h3>
+	<button onclick="changeContent()">Change text</button>
+	<p id="demo2">This is a demonstration.</p>
+	<script type="text/javascript">
+		function changeContent() {
+			document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+		}
+	</script>
+
+	<h3>Example 2 - JavaScript can change styles</h3>
+	<p id="demo3">JavaScript can change the style of an HTML element.</p>
+	<button onclick="changeStyle()">Click Me!</button>
+	<script type="text/javascript">
+		function changeStyle() {
+			document.getElementById("demo3").style.fontSize = "25px";
+			document.getElementById("demo3").style.color = "red";
+			document.getElementById("demo3").style.backgroundColor = "yellow";
+		}
+	</script>
+
+	<h3>Example 3 - JavaScript can change attributes</h3>
+	<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+	<p>
+		<button onclick="light(1)">Light On</button>
+		<button onclick="light(0)">Light Off</button>
+	</p>
+	<script type="text/javascript">
+		function light(sw) {
+			var pic;
+			if (sw == 0) {
+				pic = "pic_bulboff.gif"
+			} else {
+				pic = "pic_bulbon.gif"
+			}
+
+			document.getElementById("myImage").src = pic;
+		}
+	</script>
+
+	<u><h2>The HTML <span><</span>noscript> Tag</h2></u>
+	<p>The HTML <span><</span>noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts.</p>
+
+	<h3>Example</h3>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		document.getElementById("demo4").innerHTML = "Hello JavaScript!";
+	</script>
+
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+</body>
+</html>

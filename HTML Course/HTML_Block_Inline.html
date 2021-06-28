@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Block and Inline Elements</title>
+</head>
+<body>
+	<h1>HTML Block and Inline Elements</h1>
+	<p>Every HTML element has a default display value, depending on what type of element it is.</p>
+	<p>There are two display values: block and inline.</p>
+
+	<u><h2>Block-Level Elements</h2></u>
+	<p>A block-level element always starts on a new line.</p>
+	<p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+	<p>A block level element has a top and a bottom margin, whereas an inline element does not.</p>
+
+	<div>Hello World</div>
+	<p>Here are the block-level elements in HTML:</p>
+	<p>address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1-h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video</p>
+
+	<u><h2>Inline Elements</h2></u>
+	<p>An inline element does not start on a new line.</p>
+	<p>An inline element only takes up as much width as necessary.</p>
+	
+	<span>Hello World</span>
+	<p>Here are the inline elements in HTML:</p>
+	<p>a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var</p>
+
+	<p><b>Note:</b> An inline element cannot contain a block-level element!</p>
+
+	<u><h2>The <span><</span>div> Element</h2></u>
+	<p>The <span><</span>div> element is often used as a container for other HTML elements.</p>
+	<p>The <span><</span>div> element has no required attributes attributes, but <mark>style, class</mark> and <mark>id</mark> are common.</p>
+	<p>When used together with CSS, the <span><</span>div> element can be used to style blocks of contents.</p>
+
+	<h3>Example</h3>
+	<div style="background-color: black; color: white; padding: 20px;">
+		<h2>London</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<u><h2>The <span><</span>span> Element</h2></u>
+	<p>The <span><</span>span> element is an inline container used to mark up a part of a text, or a part of a document.</p>
+	<p>The <span><</span>span> element has no required attributes, but style, class and id are common.</p>
+	<p>When used together with CSS, the <span><</span>span> element can be used to style parts of the text.</p>
+
+	<h3>Example</h3>
+	<p>My mother has <span style="color: blue; font-weight: bold;">blue</span> eyes and my father has <span style="color: darkolivegreen; font-weight: bold;">dark green</span> eyes.</p>
+
+	<u><h2>Chapter Summary</h2></u>
+	<ul>
+		<li>There are two display values: block and inline</li>
+		<li>A block-level element always starts on a new line and takes up the full width available</li>
+		<li>An inline element does not start on a new line and it only takes up as much width as necessary</li>
+		<li>The <span><</span>div> element is a block-level and is often used as a container for other HTML elements</li>
+		<li>The <span><</span>span> element is an inline container used to mark up a part of a text, or a part of a document</li>
+	</ul>
+</body>
+</html>

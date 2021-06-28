@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Iframes</title>
+</head>
+<body>
+	<h1>HTML Iframes</h1>
+	<p>An HTML iframe is used to display a web page within a web page.</p>
+
+	<u><h2>HTML Iframe Syntax</h2></u>
+	<p>The HTML <span><</span>iframe> tag specifies an inline frame.</p>
+	<p>An inline frame is used to embed another document within the current HTML document.</p>
+	<b><p><span><</span>iframe src="url" title="description"><span><</span>/iframe></p></b>
+	<p><b>Tip:</b> It is a good practice to always include a title attribute for the <span><</span>iframe>. This is used by screen readers to read out what the content of the iframe is.</p>
+
+	<u><h2>Iframe - Set Height and Width</h2></u>
+	<p>Use the <mark>height</mark> and <mark>width</mark> attributes to specify the size of the iframe.</p>
+	
+	<p>The height and width are specified in pixels by default.</p>
+
+	<h3>Example</h3>
+	<iframe src="index.html" height="200" width="300" title="HTML Tutorials"></iframe>
+
+	<p>Or you can add the style attribute and use the CSS height and width properties.</p>
+
+	<h3>Example</h3>
+	<iframe src="index.html" style="height: 200px; width: 300px;" title="HTML Tutorials"></iframe>
+
+	<u><h2>Iframe - Remove the Border</h2></u>
+	<p>By default, an iframe has a border around it.</p>
+	<p>To remove the border, add the <mark>style</mark> attribute and use the CSS <mark>border</mark> property.</p>
+
+	<h3>Example</h3>
+	<iframe src="index.html" style="border: none;" title="HTML Tutorial"></iframe>
+
+	<p>With CSS, you can also change the size, style and color of the iframe's border.</p>
+	<iframe src="index.html" style="border: 2px solid red;" title="HTML Tutorial"></iframe>
+
+	<u><h2>Iframe - Target for a Link</h2></u>
+	<p>An iframe can be used as the target frame for a link.</p>
+	<p>The target attribute of the link must refer to the name attribute of the iframe.</p>
+
+	<h3>Example</h3>
+	<iframe src="index.html" name="index" title="HTML Tutorial"></iframe>
+	<p><a href="index.html" target="index">HTML Tutotrial</a></p>
+
+	<u><h2>Chapter Summary</h2></u>
+	<ul>
+		<li>The HTML <span><</span>iframe> tag specifies an inline frame</li>
+		<li>The <mark>src</mark> attribute defines the URL of the page to embed</li>
+		<li>Always include a <mark>title</mark> attribute (for screen readers)</li>
+		<li>The <mark>height</mark> and <mark>width</mark> attributes specifies the size of the iframe</li>
+		<li>Use <mark>border:none;</mark> to remove the border around the iframe</li>
+	</ul>
+</body>
+</html>
