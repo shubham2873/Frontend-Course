@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Table Borders</title>
+	<style type="text/css">
+		table, tr, th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Table</h1>
+
+	<u><h2>Table Borders</h2></u>
+	<p>To specify table borders in CSS, use the <mark>border</mark> property.</p>
+	<p>The example below specifies a black border for <span><</span>table>, <span><</span>th>, and <span><</span>td> elements:</p>
+
+	<h3>Example</h3>
+	<table>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Shubham</td>
+			<td>Jaiswal</td>
+		</tr>
+		<tr>
+			<td>Abhishek</td>
+			<td>Jaiswal</td>
+		</tr>
+	</table>
+
+	<u><h2>Full-Width Table</h2></u>
+	<p>The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add <mark>width: 100%</mark> to the <span><</span>table> element:</p>
+
+	<table width="100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Shubham</td>
+			<td>Jaiswal</td>
+		</tr>
+		<tr>
+			<td>Abhishek</td>
+			<td>Jaiswal</td>
+		</tr>
+	</table>
+
+	<u><h2>Double Borders</h2></u>
+	<p>Notice that the table in the examples above have double borders. This is because both the table and the <span><</span>th> and <span><</span>td> elements have separate borders.</p>
+
+	<u><h2>Collapse Table Borders</h2></u>
+	<p>The <mark>border-collapse</mark> property sets whether the table borders should be collapsed into a single border:</p>
+
+	<h3>Example</h3>
+	<table style="border-collapse: collapse;" width="100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Shubham</td>
+			<td>Jaiswal</td>
+		</tr>
+		<tr>
+			<td>Abhishek</td>
+			<td>Jaiswal</td>
+		</tr>
+	</table>
+</body>
+</html>

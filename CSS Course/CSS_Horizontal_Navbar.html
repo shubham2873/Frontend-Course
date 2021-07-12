@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Horizontal Navigation Bar</title>
+  <style>
+  body {
+    margin: 0;
+  }
+
+    ul.demo1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .demo1 li {
+      display: inline;
+    }
+
+    ul.demo2 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /*background-color: #dddddd;*/
+    }
+
+    .demo2 li {
+      float: left;
+    }
+
+    .demo2 li a {
+      display: block;
+      padding: 8px;
+      background-color: #dddddd;
+    }
+
+    ul.demo3 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .demo3 li {
+      float: left;
+    }
+
+    .demo3 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 16px 14px;
+    }
+
+    .demo3 li a:hover {
+      background-color: #111;
+    }
+
+    ul.demo4 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .demo4 li {
+      float: left;
+    }
+
+    .demo4 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 16px 14px;
+    }
+
+    .demo4 li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04aa6d;
+    }
+
+    ul.demo5 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .demo5 li {
+      float: left;
+    }
+
+    .demo5 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 16px 14px;
+    }
+
+    .demo5 li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    ul.demo6 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .demo6 li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+
+    .demo6 li:last-child {
+      border-right: none;
+    }
+
+    .demo6 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    .demo6 li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    ul.demo7 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .demo7 li {
+      float: left;
+    }
+
+    .demo7 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    .demo7 li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    ul.demo8 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .demo8 li {
+      float: left;
+    }
+
+    .demo8 li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    .demo8 li a:hover:not(.active) {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Horizontal Navigation Bar</h1>
+  <p>There are two ways to create a horizontal navigation bar. Using inline or floating list items.</p>
+
+  <u><h2>inline List Items</h2></u>
+  <p>One way to build a horizontal navigation bar is to specify the <span><</span>li> elements as inline.</p>
+
+  <h3>Example</h3>
+  <ul class="demo1">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <h4>Example explained</h4>
+  <ul>
+    <li><mark>display: inline;</mark> - By default, <span><</span>li> elements are block elements. Here, we remove the line breaks before and after each list item, to display them on one line</li>
+  </ul>
+
+  <u><h2>Floating List Items</h2></u>
+  <p>Another way of creating a horizontal navigation bar is to float the <span><</span>li> elements, and specify a layout for the navigation links:</p>
+
+  <h3>Example</h3>
+  <ul class="demo2">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <h4>Example explained</h4>
+  <ul>
+    <li>float: left; - Use float to get block elements to float next to each other</li>
+    <li>display: block; - Allows us to specify padding (and height, width, margins, etc. if you want)</li>
+    <li>padding: 8px; - Specify some padding between each <a> element, to make them look good</li>
+    <li>background-color: #dddddd; - Add a gray background-color to each <span><</span>a> element</li>
+  </ul>
+
+  <p>Tip: Add the background-color to <span><</span>ul> instead of each <span><</span>a> element if you want a full-width background color:</p>
+
+  <u><h2>Horizontal Navigation Bar Examples</h2></u>
+  <p>Create a basic horizontal navigation bar with a dark background color and change the background color of the links when the user moves the mouse over them:</p>
+
+  <h3>Example</h3>
+  <ul class="demo3">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <u><h2>Active/Current Navigation Link</h2></u>
+  <p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+
+  <h3>Example</h3>
+  <ul class="demo4">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <u><h2>Right-Align Links</h2></u>
+  <p>Right-align links by floating the list items to the right (float:right;):</p>
+
+  <h3>Example</h3>
+  <ul class="demo5">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float: right;"><a class="active" href="#about">About</a></li>
+  </ul>
+
+  <u><h2>Border Dividers</h2></u>
+  <p>Add the border-right property to <span><</span>li> to create link dividers:</p>
+
+  <h3>Example</h3>
+  <ul class="demo6">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float: right;"><a href="#about">About</a></li>
+  </ul>
+
+  <u><h2>Fixed Navigation Bar</h2></u>
+  <p>Make the navigation bar stay at the top or the bottom of the page, even when the user scrolls the page:</p>
+
+  <h3>Example</h3>
+  <ul class="demo7">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <ul class="demo8">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <p><b>Note:</b> Fixed position might not work properly on mobile devices.</p>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Table Alignment</title>
+	<style>
+		table, td, th {
+			border: 1px solid black;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.demo1 td {
+			text-align: center;
+		}
+
+		.demo2 th {
+			text-align: left;
+		}
+
+		.demo3 td {
+			height: 50px;
+			vertical-align: bottom;
+		}
+	</style>
+</head>
+<body>
+	<h1>Horizontal Alignment</h1>
+	<p>The text-align property sets the horizontal alignment (like left, right, or center) of the content in <span><</span>th> or <span><</span>td>.</p>
+	<p>By default, the content of <span><</span>th> elements are center-aligned and the content of <span><</span>td> elements are left-aligned.</p>
+	<p>To center-align the content of  <span><</span>td> elements as well, use <mark>text-align: center</mark>:</p>
+
+	<h3>Example</h3>
+	<table class="demo1">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<p>To left-align the content, force the alignment of <span><</span>th> elements to be left-aligned, with the <mark>text-align: left</mark> property:</p>
+
+	<h3>Example</h3>
+	<table class="demo2">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<u><h2>Vertical Alignment</h2></u>
+	<p>The <mark>vertical-align</mark> property sets the vertical alignment (like top, bottom, or middle) of the content in <span><</span>th> or <span><</span>td>.</p>
+	<p>By default, the vertical alignment of the content in a table is middle (for both <span><</span>th> and <span><</span>td> elements).</p>
+
+	<h3>Example</h3>
+	<table class="demo3">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+</body>
+</html>

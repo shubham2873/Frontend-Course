@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Text Decoration</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		h1.one {
+			text-decoration: overline;
+		}
+
+		h2.one {
+			text-decoration: line-through;
+		}
+
+		h3.one {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Text Decoration</h1>
+	<p>The <mark>text-decoration</mark> property is used to set or remove decorations from text.</p>
+	<p>The value <mark>text-decoration: none;</mark> is often used to remove underlines from links:</p>
+
+	<h3>Example</h3>
+	<p>A link with no uderline: <a href="#">Try This</a></p>
+
+	<p>The other <mark>text-decoration</mark> values are used to decorate text:</p>
+	
+	<h3>Example</h3>
+	<h1 class="one">This is heading 1</h1>
+	<h2 class="one">This is heading 2</h2>
+	<h3 class="one">This is heading 3</h3>
+
+	<p><b>Note:</b> It is not recommended to underline text that is not a link, as this often confuses the reader.</p>
+</body>
+</html>

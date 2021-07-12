@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Position</title>
+	<style>
+		div.static {
+			position: static;
+			border: 3px solid #73ad21;
+		}
+
+		div.relative {
+			border: 3px solid #73ad21;
+			left: 30px;
+			position: relative;
+		}
+
+		div.fixed {
+			bottom: 0;
+			right: 0;
+			width: 300px;
+			border: 3px solid #73ad21;
+			position: fixed;
+		}
+
+		div.relative2 {
+			border: 3px solid #73ad21;
+			width: 400px;
+			height: 200px;
+			position: relative;
+		}
+
+		div.absolute {
+			border: 3px solid #73ad21;
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 80px;
+			right: 0;
+		}
+
+		div.sticky {
+			position: sticky;
+			top: 0;
+			padding: 5px;
+			background-color: #cae8ca;
+			border: 2px solid #4caf50;
+		}
+
+		img {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: -1;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Layout - The position Property</h1>
+	<p>The <mark>position</mark> property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+
+	<u><h2>The position Property</h2></u>
+	<p>The <mark>position</mark> property specifies the type of positioning method used for an element.</p>
+	<p>There are five different position values:</p>
+	<ul>
+		<li>static</li>
+		<li>relative</li>
+		<li>fixed</li>
+		<li>absolute</li>
+		<li>sticky</li>
+	</ul>
+
+	<p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the <mark>position</mark> property is set first. They also work differently depending on the position value.</p>
+
+	<u><h2>position: static;</h2></u>
+	<p>HTML elements are positioned static by default.</p>
+	<p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+	<p>An element with <mark>position: static;</mark> is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+	<h3>Example</h3>
+	<div class="static">
+	  This div element has position: static;
+	</div>
+
+	<u><h2>position: relative;</h2></u>
+	<p>An element with position: relative; is positioned relative to its normal position.</p>
+	<p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+
+	<h3>Example</h3>
+	<div class="relative">
+		This div element has position: relative;
+	</div>
+
+	<u><h2>position: fixed;</h2></u>
+	<p>An element with <mark>position: fixed;</mark> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+
+	<h3>Example</h3>
+	<div class="fixed">
+		This div element has position: fixed;
+	</div>
+
+	<u><h2>position: absolute;</h2></u>
+	<p>An element with <mark>position: absolute;</mark> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+	<p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+	<p><b>Note:</b> A "positioned" element is one whose position is anything except static.</p>
+
+	<h3>Example</h3>
+	<div class="relative2">This div element has position: relative;
+	  <div class="absolute">This div element has position: absolute;</div>
+	</div>
+
+	<u><h2>position: sticky;</h2></u>
+	<p>An element with <mark>position: sticky;</mark> is positioned based on the user's scroll position.</p>
+	<p>A sticky element toggles between <mark>relative and fixed</mark>, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+
+	<h3>Example</h3>
+	<div class="sticky">I am sticky!</div>
+
+	<div style="padding-bottom:2000px">
+	  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+	  <p>Scroll back up to remove the stickyness.</p>
+	  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	</div>
+
+	<u><h2>Overlapping Elements</h2></u>
+	<p>When elements are positioned, they can overlap other elements.</p>
+	<p>The <mark>z-index</mark> property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+	<p>An element can have a positive or negative stack order:</p>
+
+	<h3>Example</h3>
+	<h1>This is heading</h1>
+	<img src="https://www.w3schools.com/css/w3css.gif" width="100" height="140">
+	<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+	<p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+	<p><b>Note:</b> If two positioned elements overlap without a <mark>z-index</mark> specified, the element positioned last in the HTML code will be shown on top.</p>
+
+	<u><h2>All CSS Positioning Properties</h2></u>
+	<table>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>bottom</td>
+			<td>Sets the bottom margin edge for a positioned box</td>
+		</tr>
+		<tr>
+			<td>clip</td>
+			<td>Clips an absolutely positioned element</td>
+		</tr>
+		<tr>
+			<td>left</td>
+			<td>Sets the left margin edge for a positioned box</td>
+		</tr>
+		<tr>
+			<td>position</td>
+			<td>Specifies the type of positioning for an element</td>
+		</tr>
+		<tr>
+			<td>right</td>
+			<td>Sets the right margin edge for a positioned box</td>
+		</tr>
+		<tr>
+			<td>top</td>
+			<td>Sets the top margin edge for a positioned box</td>
+		</tr>
+		<tr>
+			<td>z-index</td>
+			<td>Sets the stack order of an element</td>
+		</tr>
+	</table>
+</body>
+</html>

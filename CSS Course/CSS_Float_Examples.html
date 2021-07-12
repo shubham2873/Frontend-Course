@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Layout - Float Examples</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+		
+	.box {
+		float: left;
+		width: 33.33%;
+		padding: 50px;
+	}
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.img-container {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	}
+
+	.box2 {
+		float: left;
+		width: 50%;
+		padding: 50px;
+		height: 300px;
+	}
+
+	.flex-container {
+		background-color: dodgerblue;
+		flex-wrap: nowrap;
+		display: flex;
+	}
+
+	.flex-container .box3 {
+		background-color: #f1f1f1;
+		width: 50%;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+
+	.demo1 {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	.demo1 li {
+		float: left;
+	}
+
+	.demo1 li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	.demo1 li a:hover {
+		background-color: #111;
+	}
+
+	.active {
+		background-color: red;
+	}
+
+	.header, .footer {
+		background-color: grey;
+		color: white;
+		padding: 15px;
+	}
+
+	.column {
+		float: left;
+		padding: 15px;
+	}
+
+	.menu {
+		width: 25%;
+	}
+
+	.content {
+		width: 75%;
+	}
+
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu li {
+		padding: 8px;
+		margin-bottom: 8px;
+		background-color: #33b5e5;
+		color: #ffffff;
+	}
+
+	.menu li:hover {
+		background-color: #0099cc;
+	}
+
+	table, tr, th, td {
+		border: 2px solid black;
+		border-collapse: collapse;
+	}
+	</style>
+</head>
+<body>
+	<h1>CSS Layout - Float Examples</h1>
+
+	<u><h2>Grid of Boxes / Equal Width Boxes</h2></u>
+	<p>With the <mark>float</mark> property, it is easy to float boxes of content side by side:</p>
+
+	<h3>Example</h3>
+	<h2>Grid of Boxes</h2>
+	<p>Float boxes side by side:</p>
+
+	<div class="clearfix">
+	  <div class="box" style="background-color:#bbb">
+	  <p>Some text inside the box.</p>
+	  </div>
+	  <div class="box" style="background-color:#ccc">
+	  <p>Some text inside the box.</p>
+	  </div>
+	  <div class="box" style="background-color:#ddd">
+	  <p>Some text inside the box.</p>
+	  </div>
+	</div>
+
+	<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. We also use the box-sizing property to make sure that the box doesn't break due to extra padding.</p>
+
+	<h3>What is box-sizing?</h3>
+	<p>You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.</p>
+
+	<h2>Images Side by Side</h2>
+	<p>Float images side by side:</p>
+
+	<div class="clearfix">
+	  <div class="img-container">
+	  <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" style="width:100%">
+	  </div>
+	  <div class="img-container">
+	  <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" style="width:100%">
+	  </div>
+	  <div class="img-container">
+	  <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" style="width:100%">
+	  </div>
+	</div>
+
+	<u><h2>Equal Height Boxes</h2></u>
+	<p>In the previous example, you learned how to float boxes side by side with an equal width. However, it is not easy to create floating boxes with equal heights. A quick fix however, is to set a fixed height, like in the example below:</p>
+
+	<h3>Example</h3>
+	<h2>Equal Height Boxes</h2>
+	<p>Floating boxes with equal heights:</p>
+
+	<div class="clearfix">
+	  <div class="box2" style="background-color:#bbb">
+	  <h2>Box 1</h2>
+	  <p>Some content, some content, some content</p>
+	  </div>
+	  <div class="box2" style="background-color:#ccc">
+	  <h2>Box 2</h2>
+	  <p>Some content, some content, some content</p>
+	  <p>Some content, some content, some content</p>
+	  <p>Some content, some content, some content</p>
+	  </div>
+	</div>
+
+	<p>However, this is not very flexible. It is ok if you can guarantee that the boxes will always have the same amount of content in them. But many times, the content is not the same. If you try the example above on a mobile phone, you will see that the second box's content will be displayed outside of the box. This is where CSS3 Flexbox comes in handy - as it can automatically stretch boxes to be as long as the longest box:</p>
+
+	<h3>Example</h3>
+	<h1>Flexible Boxes</h1>
+
+	<div class="flex-container">
+	  <div class="box3">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+	  <div class="box3">Box 2 - My height will follow Box 1.</div>
+	</div>
+
+	<p>Try to resize the browser window to see the flexible layout.</p>
+
+	<u><h2>Navigation Menu</h2></u>
+	<p>You can also use <mark>float</mark> with a list of hyperlinks to create a horizontal menu:</p>
+
+	<h3>Example</h3>
+	<ul class="demo1">
+	  <li><a href="#home" class="active">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<u><h2>Web Layout Example</h2></u>
+	<p>It is also common to do entire web layouts using the <mark>float</mark> property:</p>
+
+	<h3>Example</h3>
+	<div class="header">
+	  <h1>Chania</h1>
+	</div>
+
+	<div class="clearfix">
+	  <div class="column menu">
+	    <ul>
+	      <li>The Flight</li>
+	      <li>The City</li>
+	      <li>The Island</li>
+	      <li>The Food</li>
+	    </ul>
+	  </div>
+
+	  <div class="column content">
+	    <h1>The City</h1>
+	    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+	    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+	  </div>
+	</div>
+
+	<div class="footer">
+	  <p>Footer Text</p>
+	</div>
+
+	<u><h2>All CSS Float Properties</h2></u>
+	<table width="100%">
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>box-sizing</td>
+			<td>Defines how the width and height of an element are calculated: should they include padding and borders, or not</td>
+		</tr>
+		<tr>
+			<td>clear</td>
+			<td>Specifies what should happen with the element that is next to a floating element</td>
+		</tr>
+		<tr>
+			<td>float</td>
+			<td>Specifies whether an element should float to the left, right, or not at all</td>
+		</tr>
+		<tr>
+			<td>overflow</td>
+			<td>Specifies what happens if content overflows an element's box</td>
+		</tr>
+		<tr>
+			<td>overflow-x</td>
+			<td>Specifies what to do with the left/right edges of the content if it overflows the element's content area</td>
+		</tr>
+		<tr>
+			<td>overflow-y</td>
+			<td>Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</td>
+		</tr>
+	</table>
+</body>
+</html>

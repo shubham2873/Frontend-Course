@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Padding</title>
+	<style>
+		.one {
+			padding: 70px;
+			border: 1px solid #4CAF50;
+		}
+
+		.two {
+			border: 1px solid black;
+			background-color: lightblue;
+			padding-top: 50px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			padding-left: 80px;
+		}
+
+		.three {
+			border: 1px solid black;
+			padding: 25px 50px 75px 100px;
+			background-color: lightblue;
+		}
+
+		.four {
+			border: 1px solid black;
+			padding: 25px 50px 75px;
+			background-color: lightblue;
+		}
+
+		.five {
+			border: 1px solid black;
+			padding: 25px 50px;
+			background-color: lightblue;
+		}
+
+		.six {
+			border: 1px solid black;
+			padding: 25px;
+			background-color: lightblue;
+		}
+
+		.seven {
+			width: 300px;
+			background-color: yellow;
+		}
+
+		.eight {
+			width: 300px;
+			padding: 25px;
+			background-color: lightblue;
+		}
+
+		.nine {
+			width: 300px;
+			background-color: yellow;
+		}
+
+		.ten {
+			width: 300px;
+			padding: 25px;
+			box-sizing: border-box;
+			background-color: lightblue;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Padding</h1>
+	<p>Padding is used to create space around an element's content, inside of any defined borders.</p>
+
+	<h3>Example</h3>
+	<div class="one">This element has a padding of 70px.</div>
+
+	<u><h2>CSS Padding</h2></u>
+	<p>The CSS <mark>padding</mark> properties are used to generate space around an element's content, inside of any defined borders.</p>
+	<p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+
+
+	<u><h2>Padding - Individual Sides</h2></u>
+	<p>CSS has properties for specifying the padding for each side of an element:</p>
+	<ul>
+		<li>padding-top</li>
+		<li>padding-right</li>
+		<li>padding-bottom</li>
+		<li>padding-left</li>
+	</ul>
+
+	<p>All the padding properties can have the following values:</p>
+	<ul>
+		<li>length - specifies a padding in px, pt, cm, etc.</li>
+		<li>% - specifies a padding in % of the width of the containing element</li>
+		<li>inherit - specifies that the padding should be inherited from the parent element</li>
+	</ul>
+
+	<p>Note: Negative values are not allowed.</p>
+
+	<h3>Example</h3>
+	<div class="two">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+	<u><h2>Padding - Shorthand Property</h2></u>
+	<p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+	<p>The <mark>padding</mark> property is a shorthand property for the following individual padding properties:</p>
+	<ul>
+		<li>padding-top</li>
+		<li>padding-right</li>
+		<li>padding-bottom</li>
+		<li>padding-left</li>
+	</ul>
+
+	<p>So, here is how it works:</p>
+	<p>If the <mark>padding</mark> property has four values:</p>
+	<h4>padding: 25px 50px 75px 100px;</h4>
+	<ul>
+		<li>top padding is 25px</li>
+		<li>right padding is 50px</li>
+		<li>bottom padding is 75px</li>
+		<li>left padding is 100px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div class="three">This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.</div>
+
+	<p>If the <mark>padding</mark> property has three values:</p>
+	<h4>padding: 25px 50px 75px;</h4>
+	<ul>
+		<li>top padding is 25px</li>
+		<li>right and left paddings are 50px</li>
+		<li>bottom padding is 75px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div class="four">This div element has a top padding of 25px, a right and left padding of 50px, and a bottom padding of 75px.</div>
+
+	<p>If the <mark>padding</mark> property has two values:</p>
+	<h4>padding: 25px 50px;</h4>
+	<ul>
+		<li>top and bottom paddings are 25px</li>
+		<li>right and left paddings are 50px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div class="five">This div element has a top and bottom padding of 25px, and a right and left padding of 50px.</div>
+
+	<p>If the <mark>padding</mark> property has one value:</p>
+	<h4>padding: 25px;</h4>
+	<ul>
+		<li>all four paddings are 25px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div class="six">This div element has a top, bottom, left, and right padding of 25px.</div>
+
+	<u><h2>Padding and Element Width</h2></u>
+	<p>The CSS <mark>width</mark> property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+	<p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+
+	<h3>Example</h3>
+	<p>Here, the <span><</span>div> element is given a width of 300px. However, the actual width of the <span><</span>div> element will be 350px (300px + 25px of left padding + 25px of right padding):</p>
+
+	<div class="seven">This div is 300px wide.</div>
+    <br>
+    <div class="eight">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
+    <p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.</p>
+
+    <h3>Example</h3>
+    <p>Use the box-sizing property to keep the width at 300px, no matter the amount of padding:</p>
+
+    <div class="nine">This div is 300px wide.</div>
+
+    <div class="ten">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.</div>
+
+    <u><h2>All CSS Padding Properties</h2></u>
+    <table>
+    	<tr>
+    		<td>Property</td>
+    		<td>Description</td>
+    	</tr>
+    	<tr>
+    		<td>padding</td>
+    		<td>A shorthand property for setting all the padding properties in one declaration</td>
+    	</tr>
+    	<tr>
+    		<td>padding-bottom</td>
+    		<td>Sets the bottom padding of an element</td>
+    	</tr>
+    	<tr>
+    		<td>padding-left</td>
+    		<td>Sets the left padding of an element</td>
+    	</tr>
+    	<tr>
+    		<td>padding-right</td>
+    		<td>Sets the right padding of an element</td>
+    	</tr>
+    	<tr>
+    		<td>padding-top</td>
+    		<td>Sets the top padding of an element</td>
+    	</tr>
+    </table>
+</body>
+</html>

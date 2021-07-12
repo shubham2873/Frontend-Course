@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Vertical Navigation Bar</title>
+	<style>
+		ul.demo1 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.demo1 li a {
+			display: block;
+			width: 60px;
+			background-color: #dddddd;
+		}
+
+		ul.demo2 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: #f1f1f1;
+		}
+
+		.demo2 li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		.demo2 li a:hover {
+			background-color: #555;
+			color: white;
+		}
+
+		ul.demo3 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: #f1f1f1;
+		}
+
+		.demo3 li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		.demo3 li a:hover {
+			background-color: #555;
+			color: white;
+		}
+
+		.active {
+			background-color: #04aa6d;
+			color: white;
+		}
+
+		ul.demo4 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: #f1f1f1;
+			border: 1px solid #555;
+		}
+
+		.demo4 li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		.demo4 li {
+			text-align: center;
+			border-bottom: 1px solid #555;
+		}
+
+		.demo4 li:last-child {
+			border-bottom: none;
+		}
+
+		.demo4 li a:hover:not(.active) {
+			background-color: #555;
+			color: white;
+		}
+
+		ul.demo5 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 25%;
+			background-color: #f1f1f1;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+		}
+
+		.demo5 li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		.demo5 li a:hover:not(.active) {
+			background-color: #555;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Vertical Navigation Bar</h1>
+	<p>To build a vertical navigation bar, you can style the <span><</span>a> elements inside the list.</p>
+
+	<h3>Example</h3>
+	<ul class="demo1">
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<h4>Example explained</h4>
+	<ul>
+		<li><mark>display: block;</mark> - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)</li>
+		<li><mark>width: 60px;</mark> - Block elements take up the full width available by default. We want to specify a 60 pixels width</li>
+	</ul>
+
+	<u><h2>Vertical Navigation Bar Examples</h2></u>
+	<p>Create a basic vertical navigation bar with a gray background color and change the background color of the links when the user moves the mouse over them:</p>
+
+	<h3>Example</h3>
+	<ul class="demo2">
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<u><h2>Active/Current Navigation Link</h2></u>
+	<p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+
+	<h3>Example</h3>
+	<ul class="demo3">
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<u><h2>Center Links & Add Borders</h2></u>
+	<p>Add <mark>text-align:center</mark> to <span><</span>li> or <span><</span>a> to center the links.</p>
+	<p>Add the <mark>border</mark> property to <span><</span>ul> add a border around the navbar. If you also want borders inside the navbar, add a <mark>border-bottom</mark> to all <span><</span>li> elements, except for the last one:</p>
+
+	<h3>Example</h3>
+	<ul class="demo4">
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<u><h2>Full-height Fixed Vertical Navbar</h2></u>
+	<p>Create a full-height, "sticky" side navigation:</p>
+
+	<h3>Example</h3>
+	<ul class="demo5">
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	  <h2>Fixed Full-height Side Nav</h2>
+	  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+	  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+	  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	</div>
+
+	<p><b>Note:</b> This example might not work properly on mobile devices.</p>
+</body>
+</html>

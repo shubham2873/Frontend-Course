@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Pseudo-elements</title>
+	<style>
+		p::first-line {
+			color: #0000ff;
+			font-variant: small-caps;
+		}
+
+		p::first-letter {
+			color: #ff0000;
+			font-size: xx-large;
+		}
+
+		p.intro::first-letter {
+			color: #ff0000;
+			font-size: 200%;
+		}
+
+		h1::before {
+			content: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-face_1f600.png);
+		}
+
+		h1::after {
+			content: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-face_1f600.png);
+		}
+
+		::marker {
+			color: red;
+			font-size: 23px;
+		}
+
+		::selection {
+			color: red;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Pseudo-elements</h1>
+	<u><h2>What are Pseudo-Elements</h2></u>
+	<p>A CSS pseudo-element is used to style specified parts of an element.</p>
+	<p>For example, it can be used to:</p>
+	<ul>
+		<li>Style the first letter, or line, of an element</li>
+		<li>Insert content before, or after, the content of an element</li>
+	</ul>
+
+	<u><h2>Syntax</h2></u>
+	<p>The syntax of pseudo-elements:</p>
+<b><pre>
+selector::Pseudo-element {
+	property: value;
+}
+</pre></b>
+
+	<u><h2>The ::first-line Pseudo-element</h2></u>
+	<p>The <mark>::first-line</mark> pseudo-element is used to add a special style to the first line of a text.</p>
+	<p>The following example formats the first line of the text in all <span><</span>p> elements:</p>
+
+	<h3>Example</h3>
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+	<p>Note: The <mark>::first-line</mark> pseudo-element can only be applied to block-level elements.</p>
+	<p>The following properties apply to the <mark>::first-line</mark> pseudo-element:</p>
+	<ul>
+		<li>font properties</li>
+		<li>color properties</li>
+		<li>background properties</li>
+		<li>word-spacing</li>
+		<li>letter-spacing</li>
+		<li>text-decoration</li>
+		<li>vertical-align</li>
+		<li>text-transform</li>
+		<li>line-height</li>
+		<li>clear</li>
+	</ul>
+
+	<p><b>Notice the double colon notation</b> - <mark>::first-line versus :first-line</mark></p>
+	<p>The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.</p>
+
+	<u><h2>The ::first-letter Pseudo-element</h2></u>
+	<p>The <mark>::first-letter</mark> pseudo-element is used to add a special style to the first letter of a text.</p>
+	<p>The following example formats the first letter of the text in all <span><</span>p> elements:</p>
+
+	<h3>Example</h3>
+	<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+	<p>Note: The <mark>::first-letter</mark> pseudo-element can only be applied to block-level elements.</p>
+	<p>The following properties apply to the <mark>::first-letter</mark> pseudo-element:</p>
+	<ul>
+		<li>font properties</li>
+		<li>color properties</li>
+		<li>background properties</li>
+		<li>margin properties</li>
+		<li>padding properties</li>
+		<li>border properties</li>
+		<li>text-decoration</li>
+		<li>vertical-align (only if "float" is "none")</li>
+		<li>text-transform</li>
+		<li>line-height</li>
+		<li>float</li>
+		<li>clear</li>
+	</ul>
+
+	<u>Pseudo-elements and CSS Classes</u>
+	<p>Pseudo-elements can be combined with CSS classes: </p>
+
+	<h3>Example</h3>
+	<p class="intro">This is an introduction.</p>
+	<p>This is a paragraph with some text. A bit more text even.</p>
+
+	<p>The example above will display the first letter of paragraphs with class="intro", in red and in a larger size.</p>
+
+	<u><h2>Multiple Pseudo-elements</h2></u>
+	<p>Several pseudo-elements can also be combined.</p>
+	<p>In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:</p>
+
+	<h3>Example</h3>
+	<p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+
+	<u><h2>CSS- The ::before Pseudo-element</h2></u>
+	<p>The <mark>::before</mark> pseudo-element can be used to insert some content before the content of an element.</p>
+	<p>The following example inserts an image before the content of each <span><</span>h1> element:</p>
+
+	<h3>Example</h3>
+	<h1>This is a heading</h1>
+
+	<u><h2>CSS - The ::after Pseudo-element</h2></u>
+	<p>The <mark>::after</mark> pseudo-element can be used to insert some content after the content of an element.</p>
+	<p>The following example inserts an image after the content of each <span><</span>h1> element:</p>
+
+	<h3>Example</h3>
+	<h1>This is a heading</h1>
+
+	<u><h2>CSS - The ::marker Pseudo-element</h2></u>
+	<p>The <mark>::marker</mark> pseudo-element selects the markers of list items.</p>
+	<p>The following example styles the markers of list items:</p>
+
+	<h3>Example</h3>
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+
+	<ol>
+	  <li>First</li>
+	  <li>Second</li>
+	  <li>Third</li>
+	</ol>
+
+	<u><h2>CSS - The ::selection Pseudo-element</h2></u>
+	<p>The <mark>::selection</mark> pseudo-element matches the portion of an element that is selected by a user.</p>
+	<p>The following CSS properties can be applied to <mark>::selection: color, background, cursor, and outline</mark>.</p>
+	<p>The following example makes the selected text red on a yellow background:</p>
+
+	<h3>Example</h3>
+	<h1>Select some text on this page:</h1>
+
+	<p>This is a paragraph.</p>
+	<div>This is some text in a div element.</div>
+
+	<h2><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">All CSS Pseudo Elements</a></h2>
+
+	<h2><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">All CSS Pseudo Classes</a></h2>
+
+</body>
+</html>

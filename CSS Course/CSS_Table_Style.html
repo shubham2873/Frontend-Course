@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Table Style</title>
+	<style>
+		.demo1 table, td, th {
+			border: 1px solid #ddd;
+			text-align: left;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.demo2, .demo3, .demo4, .demo5 th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.demo3 tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		.demo4, .demo5 tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		.demo5 th {
+			background-color: #04AA6D;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Table Padding</h1>
+	<p>To control the space between the border and the content in a table, use the <mark>padding</mark> property on <span><</span>td> and <span><</span>th> elements:</p>
+
+	<h3>Example</h3>
+	<table class="demo1">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<u><h2>Horizontal Dividers</h2></u>
+	<p>Add the <mark>border-bottom</mark> property to <span><</span>th> and <span><</span>td> for horizontal dividers:</p>
+
+	<h3>Example</h3>
+	<table class="demo2">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<u><h2>Hoverable Table</h2></u>
+	<p>Use the <mark>:hover</mark> selector on <span><</span>tr> to highlight table rows on mouse over:</p>
+
+	<h3>Example</h3>
+	<table class="demo3">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<u><h2>Striped Tables</h2></u>
+	<p>For zebra-striped tables, use the <mark>nth-child()</mark> selector and add a <mark>background-color</mark> to all even (or odd) table rows:</p>
+
+	<h3>Example</h3>
+	<table class="demo4">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+
+	<u><h2>Table Color</h2></u>
+	<h3>Example</h3>
+	<table class="demo5">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>Peter</td>
+	    <td>Griffin</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>Lois</td>
+	    <td>Griffin</td>
+	    <td>$150</td>
+	  </tr>
+	  <tr>
+	    <td>Joe</td>
+	    <td>Swanson</td>
+	    <td>$300</td>
+	  </tr>
+	  <tr>
+	    <td>Cleveland</td>
+	    <td>Brown</td>
+	    <td>$250</td>
+	  </tr>
+	</table>
+</body>
+</html>

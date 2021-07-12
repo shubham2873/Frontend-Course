@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Border Sides</title>
+	<style type="text/css">
+		#one {
+			border-top-style: dotted;
+			border-right-style: solid;
+			border-bottom-style: dotted;
+			border-left-style: solid;
+		}
+
+		#two {
+			border-style: dotted solid;
+		}
+
+		/* Four values */
+		p.four {
+		  border-style: dotted solid double dashed;
+		}
+
+		/* Three values */
+		p.three {
+		  border-style: dotted solid double;
+		}
+
+		/* Two values */
+		p.two {
+		  border-style: dotted solid;
+		}
+
+		/* One value */
+		p.one {
+		  border-style: dotted;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Border - Individual Sides</h1>
+	<p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+
+	<h3>Example</h3>
+	<p id="one">2 different border styles.</p>
+
+	<p>The example above gives the same result as this:</p>
+
+	<h3>Example</h3>
+	<p id="two">2 different border styles.</p>
+
+	<p>So, here is how it works:</p>
+	<p>If the <mark>border-style</mark> property has four values:</p>
+	<h4>border-style: dotted solid double dashed;</h4>
+	<ul>
+		<li>top border is dotted</li>
+		<li>right border is solid</li>
+		<li>bottom border is double</li>
+		<li>left border is dashed</li>
+	</ul>
+
+	<p>If the <mark>border-style</mark> property has three values:</p>
+	<h4>border-style: dotted solid double;</h4>
+	<ul>
+		<li>top border is dotted</li>
+		<li>right and left borders are solid</li>
+		<li>bottom border is double</li>
+	</ul>
+
+	<p>If the <mark>border-style</mark> property has two values:</p>
+	<h4>border-style: dotted solid;</h4>
+	<ul>
+		<li>top and bottom borders are dotted</li>
+		<li>right and left borders are solid</li>
+	</ul>
+
+	<p>If the <mark>border-style</mark> property has one value:</p>
+	<h4>border-style: dotted;</h4>
+	<ul>
+		<li>all four borders are dotted</li>
+	</ul>
+
+	<h3>Example</h3>
+	<p class="four">4 different border styles.</p>
+	<p class="three">3 different border styles.</p>
+	<p class="two">2 different border styles.</p>
+	<p class="one">1 border style.</p>
+
+	<b><p>The <mark>border-style</mark> property is used in the example above. However, it also works with <mark>border-width</mark> and <mark>border-color</mark>.</p></b>
+</body>
+</html>

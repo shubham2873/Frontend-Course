@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Font Property</title>
+	<style type="text/css">
+		p.a {
+			font: 20px Arial, sans-serif;
+		}
+
+		p.b {
+			font: italic bold 12px/30px Georgia, serif;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>The CSS Font Property</h1>
+	<p>To shorten the code, it is also possible to specify all the individual font properties in one property.</p>
+	<p>The <mark>font</mark> property is a shorthand property for:</p>
+	<ul>
+		<li>font-style</li>
+		<li>font-variant</li>
+		<li>font-weight</li>
+		<li>font-size/line-height</li>
+		<li>font-family</li>
+	</ul>
+
+	<p><b>Note:</b> The font-size and font-family values are required. If one of the other values is missing, their default value are used.</p>
+
+	<h3>Example</h3>
+	<p class="a">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
+
+    <p class="b">This is a paragraph. The font is set to italic and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+
+    <u><h2>All CSS Font Properties</h2></u>
+    <table>
+    	<tr>
+    		<th>Property</th>
+    		<th>Description</th>
+    	</tr>
+    	<tr>
+    		<td>font</td>
+    		<td>Sets all the font properties in one declaration</td>
+    	</tr>
+    	<tr>
+    		<td>font-family</td>
+    		<td>Specifies the font family for text</td>
+    	</tr>
+    	<tr>
+    		<td>font-size</td>
+    		<td>Specifies the font size of text</td>
+    	</tr>
+    	<tr>
+    		<td>font-style</td>
+    		<td>Specifies the font style for text</td>
+    	</tr>
+    	<tr>
+    		<td>font-variant</td>
+    		<td>Specifies whether or not a text should be displayed in a small-caps font</td>
+    	</tr>
+    	<tr>
+    		<td>font-weight</td>
+    		<td>Specifies the weight of a font</td>
+    	</tr>
+    </table>
+</body>
+</html>

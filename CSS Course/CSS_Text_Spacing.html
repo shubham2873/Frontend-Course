@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Text Spacing</title>
+	<style type="text/css">
+		p.one {
+			text-indent: 50px;
+		}
+
+		h1.one {
+			letter-spacing: 3px;
+		}
+
+		h2.one {
+			letter-spacing: -3px;
+		}
+
+		p.small {
+			line-height: 0.7;
+		}
+
+		p.big {
+			line-height: 1.8;
+		}
+
+		h1.two {
+			word-spacing: 10px;
+		}
+
+		h2.two {
+			word-spacing: -5px;
+		}
+
+		p.two {
+			white-space: nowrap;
+		}
+	</style>
+</head>
+<body>
+	<h1>Text Indentation</h1>
+	<p>The <mark>text-indent</mark> property is used to specify the indentation of the first line of a text:</p>
+
+	<h3>Example</h3>
+	<p class="one">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+	<u><h2>Letter Spacing</h2></u>
+	<p>The <mark>letter-spacing</mark> property is used to specify the space between the characters in a text.</p>
+	<p>The following example demonstrates how to increase or decrease the space between characters:</p>
+
+	<h3>Example</h3>
+	<h1 class="one">This is heading 1</h1>
+	<h2 class="one">This is heading 2</h2>
+
+	<u><h2>Line Height</h2></u>
+	<p>The <mark>line-height</mark> property is used to specify the space between lines:</p>
+
+	<h3>Example</h3>
+	<p class="small">
+	This is a paragraph with a smaller line-height.<br>
+	This is a paragraph with a smaller line-height.<br>
+	</p>
+
+	<p class="big">
+	This is a paragraph with a bigger line-height.<br>
+	This is a paragraph with a bigger line-height.<br>
+	</p>
+
+	<u><h2>Word Spacing</h2></u>
+	<p>The <mark>word-spacing</mark> property is used to specify the space between the words in a text.</p>
+	<p>The following example demonstrates how to increase or decrease the space between words:</p>
+
+	<h3>Example</h3>
+	<h1 class="two">This is heading 1</h1>
+	<h2 class="two">This is heading 2</h2>
+
+	<u><h2>White Space</h2></u>
+	<p>The <mark>white-space</mark> property specifies how white-space inside an element is handled.</p>
+	<p>This example demonstrates how to disable text wrapping inside an element:</p>
+
+	<h3>Example</h3>
+	<p class="two">
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	</p>
+</body>
+</html>

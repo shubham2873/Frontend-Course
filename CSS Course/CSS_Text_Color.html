@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Text</title>
+	<style>
+		div.one {
+			border: 1px solid gray;
+			padding: 8px;
+		}
+
+		h1.one {
+			text-align: center;
+			text-transform: uppercase;
+			color: #4caf50;
+		}
+
+		p.one {
+			text-indent: 50px;
+			text-align: justify;
+			letter-spacing: 3px;
+		}
+
+		a.one {
+			text-decoration: none;
+			color: #008cba;
+		}
+
+		h1.two {
+			color: green;
+		}
+
+		h1.three {
+			background-color: black;
+			color: white;
+		}
+
+		body {
+			background-color: lightgrey;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Text</h1>
+	<p>CSS has a lot of properties for formatting text.</p>
+	<div class="one">
+		<h1 class="one">text formatting</h1>
+		<p class="one">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+			<a class="one" target="_blank" href="#">
+				"Try it Yourself"
+			</a> 
+		link.
+		</p>
+	</div>
+
+	<u><h2>Text Color</h2></u>
+	<p>The <mark>color</mark> property is used to set the color of the text. The color is specified by:</p>
+	<ul>
+		<li>a color name - like "red"</li>
+		<li>a HEX value - like "#ff0000"</li>
+		<li>an RGB value - like "rgb(255,0,0)"</li>
+	</ul>
+
+	<h3>Example</h3>
+	<h1 class="two">This is heading 1</h1>
+	<p class="two">This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+	<p class="two">Another paragraph.</p>
+
+	<u><h2>Text Color and Background Color</h2></u>
+	<p>In this example, we define both the <mark>background-color</mark> property and the <mark>color</mark> property:</p>
+	
+	<h3>Example</h3>
+	<h1 class="three">This Heading is Black with White Text</h1>
+	<p class="three">This page has a grey background color and a blue text.</p>
+	<p class="three">Another paragraph.</p>
+</body>
+</html>

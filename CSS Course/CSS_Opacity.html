@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Opacity</title>
+	<style>
+		img.img1 {
+			opacity: 0.5;
+		}
+
+		img.img2 {
+			opacity: 0.5;
+		}
+
+		img.img2:hover {
+			opacity: 1.0;
+		}
+
+		img.img3:hover {
+			opacity: 0.5;
+		}
+
+		div {
+			background-color: #4caf50;
+			padding: 10px;
+		}
+
+		div.first {
+			opacity: 0.1;
+		}
+
+		div.second {
+			opacity: 0.3;
+		}
+
+		div.third {
+			opacity: 0.6;
+		}
+
+		div.four {
+			background: rgba(76, 175, 80, 0.1);
+		}
+
+		div.five {
+			background: rgba(76, 175, 80, 0.3);
+		}
+
+		div.six {
+			background: rgba(76, 175, 80, 0.6);
+		}
+
+		div.background {
+			background: url(https://media.gettyimages.com/photos/closeup-purple-clematis-flowers-picture-id565820433?k=6&m=565820433&s=612x612&w=0&h=y41Ju2M-6uCl5dmEqS49N8MXvEnUO3fEqv6LoDLQmFI=);
+			border: 2px solid black;
+		}
+
+		div.transbox {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.6;
+		}
+
+		div.transbox p {
+			margin: 5%;
+			font-weight: bold;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Opacity / Transparency</h1>
+	<p>The <mark>opacity</mark> property specifies the opacity/transparency of an element.</p>
+
+	<u><h2>Transparent Image</h2></u>
+	<p>The <mark>opacity</mark> property can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+
+	<h3>Example</h3>
+	<p>Image with 50% opacity:</p>
+	<img class="img1" src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="170" height="100">
+
+	<u><h2>Transparent Hover Effect</h2></u>
+	<p>The <mark>opacity</mark> property is often used together with the <mark>:hover</mark> selector to change the opacity on mouse-over:</p>
+
+	<h3>Example</h3>
+	<img class="img2" src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="170" height="100">
+	<img class="img2" src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="170" height="100">
+	<img class="img2" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" width="170" height="100">
+
+	<h3>An example of reversed hover effect:</h3>
+	
+	<h3>Example</h3>
+	<img class="img3" src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="170" height="100">
+	<img class="img3" src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="170" height="100">
+	<img class="img3" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" width="170" height="100">
+
+	<u><h2>Transparent Box</h2></u>
+	<p>When using the <mark>opacity</mark> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read:</p>
+
+	<h3>Example</h3>
+	<div class="first"><p>opacity 0.1</p></div>
+	<div class="second"><p>opacity 0.3</p></div>
+	<div class="third"><p>opacity 0.6</p></div>
+	<div><p>opacity 1 (default)</p></div>
+
+	<u><h2>Transparency using RGBA</h2></u>
+	<p>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:</p>
+	<p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+
+	<h3>Example</h3>
+	<h1>Transparent Box</h1>
+	<p>With opacity:</p>
+	<div class="first"><p>opacity 0.1</p></div>
+	<div class="second"><p>opacity 0.3</p></div>
+	<div class="third"><p>opacity 0.6</p></div>
+	<div><p>opacity 1 (default)</p></div>
+
+	<p>With RGBA color values:</p>
+	<div class="four"><p>10% opacity</p></div>
+	<div class="five"><p>30% opacity</p></div>
+	<div class="six"><p>60% opacity</p></div>
+	<div><p>default</p></div>
+
+	<u><h2>Text in Transparent Box</h2></u>
+
+	<h3>Example</h3>
+	<div class="background">
+	  <div class="transbox">
+	    <p>This is some text that is placed in the transparent box.</p>
+	  </div>
+	</div>
+</body>
+</html>

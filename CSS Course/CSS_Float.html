@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Layout - float and clear</title>
+	<style>
+		img.demo1 {
+			float: right;
+		}
+
+		img.demo2 {
+			float: left;
+		}
+
+		img.demo3 {
+			float: none;
+		}
+
+		div {
+			float: left;
+			padding: 15px;
+		}
+
+		.div1 {
+			background: red;
+		}
+
+		.div2 {
+			background: yellow;
+		}
+
+		.div3 {
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Layout - float and clear</h1>
+	<p>The CSS <mark>float</mark> property specifies how an element should float.</p>
+	<p>The CSS <mark>clear</mark> property specifies what elements can float beside the cleared element and on which side.</p>
+
+	<u><h2>The float Property</h2></u>
+	<p>The <mark>float</mark> property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p>
+	<p>The <mark>float</mark> property can have one of the following values:</p>
+	<ul>
+		<li>left - The element floats to the left of its container</li>
+		<li>right - The element floats to the right of its container</li>
+		<li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+		<li>inherit - The element inherits the float value of its parent</li>
+	</ul>
+	<p>In its simplest use, the <mark>float</mark> property can be used to wrap text around images.</p>
+
+	<u><h2>Example - float:right;</h2></u>
+	<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+	<p><img class="demo1" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width:170px; height:170px; margin-left:15px;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+	<u><h2>Example - float:left;</h2></u>
+	<p>In this example, the image will float to the left in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+	<p><img class="demo2" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+	<u><h2>Example - No float</h2></u>
+	<p>In this example, the image will float to the left in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+	<p><img class="demo3" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+	<u><h2>Example - Float Next To Each Other</h2></u>
+	<p>Normally div elements will be displayed on top of each other. However, if we use <mark>float: left</mark> we can let elements float next to each other:</p>
+
+	<h3>Example</h3>
+	<div class="div1">Div 1</div>
+	<div class="div2">Div 2</div>
+	<div class="div3">Div 3</div>
+</body>
+</html>

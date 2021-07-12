@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Margins</title>
+	<style type="text/css">
+		#one {
+			border: 1px solid black;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+			background-color: lightblue;
+		}
+
+		#two {
+			border: 1px solid black;
+			margin: 25px 50px 75px 100px;
+			background-color: lightblue;
+		}
+
+		#three {
+			border: 1px solid black;
+			margin: 25px 50px 75px;
+			background-color: lightblue;
+		}
+
+		#four {
+			border: 1px solid black;
+			margin: 25px 50px;
+			background-color: lightblue;
+		}
+
+		#five {
+			border: 1px solid black;
+			margin: 25px;
+			background-color: lightblue;
+		}
+
+		#six {
+			width: 300px;
+			margin: auto;
+			border: 1px solid red;
+		} 
+
+		#seven {
+			border: 1px solid red;
+			margin-left: 100px;
+		}
+
+		p.p1 {
+			margin-left: inherit;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Margins</h1>
+	<p>The CSS <mark>margin</mark> properties are used to create space around elements, outside of any defined borders.</p>
+	<p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+
+	<u><h2>Margin - Individual Sides</h2></u>
+	<p>CSS has properties for specifying the margin for each side of an element:</p>
+	<ul>
+		<li>margin-top</li>
+		<li>margin-right</li>
+		<li>margin-bottom</li>
+		<li>margin-left</li>
+	</ul>
+
+	<p>All the margin properties can have the following values:</p>
+	<ul>
+		<li>auto - the browser calculates the margin</li>
+		<li>length - specifies a margin in px, pt, cm, etc.</li>
+		<li>% - specifies a margin in % of the width of the containing element</li>
+		<li>inherit - specifies that the margin should be inherited from the parent element</li>
+	</ul>
+
+	<p><b>Tip:</b> Negative values are allowed.</p>
+
+	<h3>Example</h3>
+	<div id="one">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+	<u><h2>Margin - Shorthand Property</h2></u>
+	<p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+	<p>The <mark>margin</mark> property is a shorthand property for the following individual margin properties:</p>
+	<ul>
+		<li>margin-top</li>
+		<li>margin-right</li>
+		<li>margin-bottom</li>
+		<li>margin-left</li>
+	</ul>
+	
+	<p>So, here is how it works:</p>
+	<p>If the <mark>margin</mark> property has four values:</p>
+	
+	<h4>margin: 25px 50px 75px 100px;</h4>
+	<ul>
+		<li>top margin is 25px</li>
+		<li>right margin is 50px</li>
+		<li>bottom margin is 75px</li>
+		<li>left margin is 100px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div id="two">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+
+	<p>If the margin property has three values:</p>
+	<h4>margin: 25px 50px 75px;</h4>
+	<ul>
+		<li>top margin is 25px</li>
+		<li>right and left margins are 50px</li>
+		<li>bottom margin is 75px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div id="three">This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.</div>
+
+	<p>If the <mark>margin</mark> property has two values:</p>
+	<h4>margin: 25px 50px;</h4>
+	<ul>
+		<li>top and bottom margins are 25px</li>
+		<li>right and left margins are 50px</li>
+	</ul>
+
+	<h4>Example</h4>
+	<div id="four">This div element has a top and bottom margin of 25px, and a right and left margin of 50px.</div>
+
+	<p>If the <mark>margin</mark> property has one value:</p>
+	<h4>margin: 25px;</h4>
+	<ul>
+		<li>all four margins are 25px</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div id="five">This div element has a top, bottom, left, and right margin of 25px.</div>
+
+	<u><h2>The auto Value</h2></u>
+	<p>You can set the margin property to <mark>auto</mark> to horizontally center the element within its container.</p>
+	<p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+
+	<h3>Example</h3>
+	<div id="six">This div will be horizontally centered because it has margin: auto;</div>
+
+	<u><h2>The inherit Value</h2></u>
+	<p>This example lets the left margin of the <span><</span>p class="ex1"> element be inherited from the parent element (<span><</span>div>):</p>
+
+	<h3>Example</h3>
+	<div id="seven">
+	<p class="p1">This paragraph has an inherited left margin (from the div element).</p>
+	</div>
+</body>
+</html>

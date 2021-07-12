@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Text Alignment</title>
+	<style>
+		h1.one {
+			text-align: center;
+		}
+
+		h2.one {
+			text-align: left;
+		}
+
+		h3.one {
+			text-align: right;
+		}
+
+		div.one {
+			border: 1px solid black;
+			padding: 10px;
+			width: 200px;
+			height: 200px;
+			text-align: justify;
+		}
+
+		p.ex1 {
+			direction: rtl;
+			unicode-bidi: bidi-override;
+		}
+
+		img.a {
+			vertical-align: baseline;
+		}
+
+		img.b {
+			vertical-align: text-top;
+		}
+
+		img.c {
+			vertical-align: text-bottom;
+		}
+
+		img.d {
+			vertical-align: sub;
+		}
+
+		img.e {
+			vertical-align: super;
+		}
+	</style>
+</head>
+<body>
+	<h1>Text Alignment</h1>
+	<p>The <mark>text-align</mark> property is used to set the horizontal alignment of a text.</p>
+	<p>A text can be left or right aligned, centered, or justified.</p>
+	<p>The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):</p>
+
+	<h3>Example</h3>
+	<h1 class="one">Heading 1 (center)</h1>
+	<h2 class="one">Heading 2 (left)</h2>
+	<h3 class="one">Heading 3 (right)</h3>
+
+	<p>When the <mark>text-align</mark> property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</p>
+
+	<h3>Example</h3>
+	<div class="one">
+	    In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+	</div>
+
+	<u><h2>Text Decoration</h2></u>
+	<p>The <mark>direction</mark> and <mark>unicode-bidi</mark> properties can be used to change the text direction of an element:</p>
+
+	<h3>Example</h3>
+	<p class="ex1">This is right-to-left text direction.</p>
+
+	<u><h3>Vertical Alignment</h3></u>
+	<p>The <mark>vertical-align</mark> property sets the vertical alignment of an element.</p>
+
+	<h3>Example</h3>
+	<h2>vertical-align: baseline (default):</h2>
+	<p>An <img class="a" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+	<h2>vertical-align: text-top:</h2>
+	<p>An <img class="b" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+	<h2>vertical-align: text-bottom:</h2>
+	<p>An <img class="c" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+	<h2>vertical-align: sub:</h2>
+	<p>An <img class="d" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+	<h2>vertical-align: sup:</h2>
+	<p>An <img class="e" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+</body>
+</html>

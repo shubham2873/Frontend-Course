@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Background Repeat</title>
+	<style type="text/css">
+		body {
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv0xu6u-6zK0mTRNb9a4g4vmdqWaVVvm2fBg&usqp=CAU);
+			background-repeat: no-repeat;
+			background-position: right top;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS background-repeat</h1>
+	<p>By default, the <mark>background-image</mark> property repeats an image both horizontally and vertically.</p>
+	<p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+
+	<h3>Example</h3>
+<pre>
+body {
+  background-image: url("image1.png");
+}
+</pre>
+
+	<p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:</p>
+
+	<h3>Example</h3>
+<pre>
+body {
+  background-image: url("image1.png");
+  background-repeat: repeat-x;
+}
+</pre>
+
+	<p><b>Tip:</b> To repeat an image vertically, set background-repeat: repeat-y;</p>
+
+	<u><h2>CSS background-repeat: no-repeat</h2></u>
+	<p>Showing the background image only once is also specified by the background-repeat property:</p>
+
+	<h3>Example</h3>
+<pre>
+body {
+  background-image: url("image2.png");
+  background-repeat: no-repeat;
+}
+</pre>
+
+	<p>In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.</p>
+
+	<u><h2>CSS background-position</h2></u>
+	<p>The <mark>background-position</mark> property is used to specify the position of the background image.</p>
+
+	<h3>Example</h3>
+<pre>
+body {
+  background-image: url("image2.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Pseudo-classes</title>
+	<style type="text/css">
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: green;
+		}
+
+		a:hover {
+			color: hotpink;
+		}
+
+		a:active {
+			color: blue;
+		}
+
+		.highlight:hover {
+			color: #ff0000;
+		}
+
+		.demo1 {
+			background-color: green;
+			color: white;
+			padding: 25px;
+			text-align: center;
+		}
+
+		.demo1:hover {
+			background-color: blue;
+		}
+
+		.demo2 p {
+			display: none;
+			background-color: yellow;
+			padding: 20px;
+		}
+
+		.demo2:hover p {
+			display: block;
+		}
+
+		p:first-child {
+			color: blue;
+		}
+
+		p i:first-child {
+			color: blue;
+		}
+
+		p:first-child i {
+			color: blue;
+		}
+
+		q:lang(no) {
+			quotes: "~" "~";
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Pseudo-classes</h1>
+
+	<u><h2>What are Pseudo-classes?</h2></u>
+	<p>A pseudo-class is used to define a special state of an element.</p>
+	<p>For example, it can be used to:</p>
+	<ul>
+		<li>Style an element when a user mouses over it</li>
+		<li>Style visited and unvisited links differently</li>
+		<li>Style an element when it gets focus</li>
+	</ul>
+
+	<u><h2>Syntax</h2></u>
+	<p>The syntax of pseudo-classes:</p>
+<b><pre>
+selector:pseudo-class {
+	property: value;
+}
+</pre></b>
+
+	<u><h2>Anchor Pseudo-classes</h2></u>
+	<p>Links can be displayed in different ways:</p>
+
+	<h3>Example</h3>
+	<a href="#" target="_blank">This is a link</a>
+
+	<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.</p>
+	
+	<u><h2>Pseudo-classes and CSS Classes</h2></u>
+	<p>Pseudo-classes can be combined with CSS classes:</p>
+	
+	<u><h2>Hover on <span><</span>div></h2></u>
+	<p>An example of using the <mark>:hover</mark> pseudo-class on a <span><</span>div> element:</p>
+	
+	<h3>Example</h3>
+	<div class="demo1">Mouse Over Me</div>
+
+	<u><h2>Simple Tooltip Hover</h2></u>
+	<p>Hover over a <span><</span>div> element to show a <span><</span>p> element (like a tooltip):</p>
+
+	<h3>Example</h3>
+	<div class="demo2">Hover over me to show the p element
+	  <p style="display: none; background-color: yellow; padding: 20px;">Tada! Here I am!</p>
+	</div>
+
+	<u><h2>CSS - The :first-child Pseudo-class</h2></u>
+	<p>The <mark>:first-child</mark> pseudo-class matches a specified element that is the first child of another element.</p>
+
+	<u><h2>Match the first <span><</span>p> element</h2></u>
+	<p>In the following example, the selector matches any <span><</span>p> element that is the first child of any element:</p>
+
+	<h3>Example</h3>
+	<p>This is some text.</p>
+	<p>This is some text.</p>
+
+	<u><h2>Match the first <span><</span>i> element in all <span><</span>p> elements</h2></u>
+	<p>In the following example, the selector matches the first <span><</span>i> element in all <span><</span>p> elements:</p>
+
+	<h3>Example</h3>
+	<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+	<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+	<u><h2>Match all <span><</span>i> elements in all first child <span><</span>p> elements</h2></u>
+	<p>In the following example, the selector matches all <span><</span>i> elements in <span><</span>p> elements that are the first child of another element:</p>
+
+	<h3>Example</h3>
+	<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+	<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+	<u><h2>CSS - The :lang Pseudo-class</h2></u>
+	<p>The <mark>:lang</mark> pseudo-class allows you to define special rules for different languages.</p>
+	<p>In the example below, <mark>:lang</mark> defines the quotation marks for <q> elements with lang="no":</p>
+
+	<h3>Example</h3>
+	<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+	<h2><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">All CSS Pseudo Classes</a></h2>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Lists</title>
+	<style>
+		ul.a {
+			list-style-type: circle;
+		}
+
+		ul.b {
+			list-style-type: square;
+		}
+
+		ol.c {
+			list-style-type: upper-roman;
+		}
+
+		ol.d {
+			list-style-type: lower-alpha;
+		}
+
+		ul.e {
+			list-style-position: outside;
+		}
+
+		ul.f {
+			list-style-position: inside;
+		}
+
+		ul.demo {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul.demo2 {
+			list-style: square inside url('sqpurple.gif');
+		}
+
+		.demo3 {
+			background: #ff9999;
+			padding: 20px;
+		}
+
+		.demo3 li {
+			background: #ffe5e5;
+			padding: 5px;
+			margin-left: 35px;
+		}
+
+		.demo4 {
+			background: #3399ff;
+			padding: 20px;
+		}
+
+		.demo4 li {
+			background: #cce5ff;
+			margin: 5px;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Lists</h1>
+	<h1>Unordered Lists:</h1>
+	<ul>
+		<li style="list-style-type: circle;">Coffee</li>
+		<li style="list-style-type: circle;">Tea</li>
+		<li style="list-style-type: circle;">Coca Cola</li>
+	</ul>
+	<ul>
+		<li style="list-style-type: square;">Coffee</li>
+		<li style="list-style-type: square;">Tea</li>
+		<li style="list-style-type: square;">Coca Cola</li>
+	</ul>
+
+	<h1>Ordered Lists:</h1>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola</li>
+	</ol>
+	<ol>
+		<li style="list-style-type: upper-roman;">Coffee</li>
+		<li style="list-style-type: upper-roman;">Tea</li>
+		<li style="list-style-type: upper-roman;">Coca Cola</li>
+	</ol>
+
+	<u><h2>HTML Lists and CSS List Properties</h2></u>
+	<p>In HTML, there are two main types of lists:</p>
+	<ul>
+		<li>unordered lists (<span><</span>ul>) - the list items are marked with bullets</li>
+		<li>ordered lists (<span><</span>ol>) - the list items are marked with numbers or letters</li>
+	</ul>
+
+	<p>The CSS list properties allow you to:</p>
+	<ul>
+		<li>Set different list item markers for ordered lists</li>
+		<li>Set different list item markers for unordered lists</li>
+		<li>Set an image as the list item marker</li>
+		<li>Add background colors to lists and list items</li>
+	</ul>
+
+	<u><h2>Different List Item Markers</h2></u>
+	<p>The list-style-type property specifies the type of list item marker.</p>
+	<p>The following example shows some of the available list item markers:</p>
+
+	<h3>Example</h3>
+	<p>Example of unordered lists:</p>
+	<ul class="a">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<ul class="b">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<p>Example of ordered lists:</p>
+	<ol class="c">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ol>
+
+	<ol class="d">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ol>
+
+	<u><h2>An Image as The List Item Marker</h2></u>
+	<p>The <mark>list-style-image</mark> property specifies an image as the list item marker:</p>
+
+	<h3>Example</h3>
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<u><h2>Position The List Item Markers</h2></u>
+	<p>The <mark>list-style-position</mark> property specifies the position of the list-item markers (bullet points).</p>
+
+	<h3>Example</h3>
+	<h2>list-style-position: outside (default):</h2>
+	<ul class="e">
+	  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+	  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+	  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+	</ul>
+
+	<h2>list-style-position: inside:</h2>
+	<ul class="f">
+	  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+	  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+	  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+	</ul>
+
+	<u><h2>Remove Default Settings</h2></u>
+	<p>The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <span><</span>ul> or <span><</span>ol>:</p>
+
+	<h3>Example</h3>
+	<p>Default list:</p>
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<p>Remove bullets, margin and padding:</p>
+	<ul class="demo">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<u><h2>List - Shorthand property</h2></u>
+	<p>The <mark>list-style</mark> property is a shorthand property. It is used to set all the list properties in one declaration:</p>
+
+	<h3>Example</h3>
+	<ul class="demo2">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<p>When using the shorthand property, the order of the property values are:</p>
+	<ul>
+		<li><mark>list-style-type</mark> (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)</li>
+		<li><mark>list-style-position</mark> (specifies whether the list-item markers should appear inside or outside the content flow)</li>
+		<li><mark>list-style-image</mark> (specifies an image as the list item marker)</li>
+	</ul>
+
+	<p>If one of the property values above are missing, the default value for the missing property will be inserted, if any.</p>
+
+	<u><h2>Styling List With Colors</h2></u>
+	<p>We can also style lists with colors, to make them look a little more interesting.</p>
+	<p>Anything added to the <span><</span>ol> or <span><</span>ul> tag, affects the entire list, while properties added to the <span><</span>li> tag will affect the individual list items:</p>
+
+	<h3>Example</h3>
+	<h1>Styling Lists With Colors:</h1>
+
+	<ol class="demo3">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ol>
+
+	<ul class="demo4">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<u><h2>All CSS List Properties</h2></u>
+	<table>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>list-style</td>
+			<td>Sets all the properties for a list in one declaration</td>
+		</tr>
+		<tr>
+			<td>list-style-image</td>
+			<td>Specifies an image as the list-item marker</td>
+		</tr>
+		<tr>
+			<td>list-style-position</td>
+			<td>Specifies the position of the list-item markers (bullet points)</td>
+		</tr>
+		<tr>
+			<td>list-style-type</td>
+			<td>Specifies the type of list-item marker</td>
+		</tr>
+	</table>
+</body>
+</html>

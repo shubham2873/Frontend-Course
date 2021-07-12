@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Background Shorthand</title>
+	<style type="text/css">
+		body {
+			background: #ffffff url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv0xu6u-6zK0mTRNb9a4g4vmdqWaVVvm2fBg&usqp=CAU') no-repeat right top;
+		}
+
+		table, tr, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		} 
+	</style>
+</head>
+<body>
+	<h1>CSS background-Shorthand property</h1>
+	<p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p>
+	<p>Instead of writing:</p>
+
+<pre>
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</pre>
+
+	<p>You can use the shorthand property background:</p>
+
+	<h3>Example</h3>
+	<p>Use the shorthand property to set the background properties in one declaration:</p>
+<pre>
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+</pre>
+
+	<p>When using the shorthand property the order of the property values is:</p>
+	<ul>
+		<li>background-color</li>
+		<li>background-image</li>
+		<li>background-repeat</li>
+		<li>background-attachment</li>
+		<li>background-position</li>
+	</ul>
+
+	<p>It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+
+	<u><h2>All CSS Background Properties</h2></u>
+	<table>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>background</td>
+			<td>Sets all the background properties in one declaration</td>
+		</tr>
+		<tr>
+			<td>background-attachment</td>
+			<td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+		</tr>
+		<tr>
+			<td>background-clip</td>
+			<td>Specifies the painting area of the background</td>
+		</tr>
+		<tr>
+			<td>background-color</td>
+			<td>Sets the background color of an element</td>
+		</tr>
+		<tr>
+			<td>background-image</td>
+			<td>Sets the background image for an element</td>
+		</tr>
+		<tr>
+			<td>background-origin</td>
+			<td>Specifies where the background image(s) is/are positioned</td>
+		</tr>
+		<tr>
+			<td>background-position</td>
+			<td>Sets the starting position of a background image</td>
+		</tr>
+		<tr>
+			<td>background-repeat</td>
+			<td>Sets how a background image will be repeated</td>
+		</tr>
+		<tr>
+			<td>background-size</td>
+			<td>Specifies the size of the background image(s)</td>
+		</tr>
+	</table>
+</body>
+</html>

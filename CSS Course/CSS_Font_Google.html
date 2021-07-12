@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effect=fire|neon|outline|emboss|shadow-multiple" rel="stylesheet">
+	<title>CSS Google Fonts</title>
+	<style type="text/css">
+		.one, .b {
+			font-family: "Sofia", sans-serif;
+		}
+
+		.two, .c {
+			font-family: "Trirong", serif;
+		}
+
+		.three, .a {
+			font-family: "Audiowide", sans-serif;
+		}
+
+		.four {
+			font-family: "Sofia", sans-serif;
+			font-size: 30px;
+			text-shadow: 3px 3px 3px #ababab;
+		}
+
+		.effect {
+			font-family: "Sofia", sans-serif;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Google Fonts</h1>
+	<p>If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.</p>
+	<p>Google Fonts are free to use, and have more than 1000 fonts to choose from.</p>
+
+	<u><h2>How To Use Google Fonts</h2></u>
+	<p>Just add a special style sheet link in the <span><</span>head> section and then refer to the font in the CSS.</p>
+
+	<h3>Example</h3>
+	<h1>Sofia Font</h1>
+	<h1 class="one">Sofia Font</h1>
+	<p class="one">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Officia corporis nemo a quibusdam molestiae labore facere facilis eos voluptatum numquam provident veniam magni aliquid animi deserunt, quod dicta voluptate sequi!</p>
+
+	<h3>Example</h3>
+	<h1>Trirong Font</h1>
+	<h1 class="two">Trirong Font</h1>
+	<p class="two">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Officia corporis nemo a quibusdam molestiae labore facere facilis eos voluptatum numquam provident veniam magni aliquid animi deserunt, quod dicta voluptate sequi!</p>
+
+	<h3>Example</h3>
+	<h1>Audiowide Font</h1>
+	<h1 class="three">Audiowide Font</h1>
+	<p class="three">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Officia corporis nemo a quibusdam molestiae labore facere facilis eos voluptatum numquam provident veniam magni aliquid animi deserunt, quod dicta voluptate sequi!</p>
+
+	<p><b>Note:</b> When specifying a font in CSS, always list at minimum one fallback font (to avoid unexpected behaviors). So, also here you should add a generic font family (like serif or sans-serif) to the end of the list.</p>
+
+	<u>Use Multiple Google Fonts</u>
+	<p>To use multiple Google fonts, just separate the font names with a pipe character (|), like this:</p>
+
+	<h3>Example</h3>
+	<h1 class="a">Audiowide Font</h1>
+	<h1 class="b">Sofia Font</h1>
+	<h1 class="c">Trirong Font</h1>
+
+	<p><b>Note</b>: Requesting multiple fonts may slow down your web pages! So be careful about that.</p>
+
+	<u><h2>Styling Google Fonts</h2></u>
+	<p>Of course you can style Google Fonts as you like, with CSS!</p>
+
+	<h3>Example</h3>
+	<h1 class="four">Sofia Font</h1>
+
+	<u><h2>Enabling Font Effects</h2></u>
+	<p>Google have also enabled different font effects that you can use.</p>
+	<p>First add <mark>effect=effectname</mark> to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with <mark>font-effect-</mark> and ends with the <mark>effectname</mark>.</p>
+
+	<h3>Example</h3>
+	<h1 class="effect font-effect-fire">Sofia on Fire</h1>
+
+	<p>To request multiple font effects, just separate the effect names with a pipe character (|), like this:</p>
+
+	<h3>Example</h3>
+	<h1 class="effect font-effect-neon">Neon Effect</h1>
+	<h1 class="effect font-effect-outline">Outline Effect</h1>
+	<h1 class="effect font-effect-emboss">Emboss Effect</h1>
+	<h1 class="effect font-effect-shadow-multiple">Multiple Shadow Effect</h1>
+</body>
+</html>

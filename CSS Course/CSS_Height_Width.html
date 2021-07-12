@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Height and Width</title>
+	<style type="text/css">
+		.one {
+			height: 50px;
+			width: 100%;
+			border: 1px solid #4CAF50;
+		}
+
+		.two {
+			height: 200px;
+			width: 50%;
+			background-color: powderblue;
+		}
+
+		.three {
+			height: 100px;
+			width: 500px;
+			background-color: powderblue;
+		}
+
+		.four {
+			max-width: 500px;
+			height: 100px;
+			background-color: powderblue;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Height and Width</h1>
+	<p>The CSS <mark>height</mark> and <mark>width</mark> properties are used to set the height and width of an element.</p>
+	<p>The CSS <mark>max-width</mark> property is used to set the maximum width of an element.</p>
+
+	<h3>Example</h3>
+	<div class="one">This element has a height of 50 pixels and a width of 100%.</div>
+
+	<u><h2>CSS Setting height and width</h2></u>
+	<p>The <mark>height</mark> and <mark>width</mark> properties are used to set the height and width of an element.</p>
+	<p>The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</p>
+
+	<u><h2>CSS height and width Values</h2></u>
+	<p>The <mark>height</mark> and <mark>width</mark> properties may have the following values:</p>
+	<ul>
+		<li>auto - This is default. The browser calculates the height and width</li>
+		<li>length - Defines the height/width in px, cm etc.</li>
+		<li>% - Defines the height/width in percent of the containing block</li>
+		<li>initial - Sets the height/width to its default value</li>
+		<li>inherit - The height/width will be inherited from its parent value</li>
+	</ul>
+
+	<h3>Example</h3>
+	<div class="two">This div element has a height of 200px and a width of 50%.</div>
+
+	<h3>Example</h3>
+	<div class="three">This div element has a height of 100px and a width of 500px.</div>
+
+	<p><b>Note:</b> Remember that the <mark>height</mark> and <mark>width</mark> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p>
+
+	<u><h2>Setting max-width</h2></u>
+	<p>The <mark>max-width</mark> property is used to set the maximum width of an element.</p>
+	<p>The <mark>max-width</mark> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+	<p>The problem with the <span><</span>div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.</p>
+	<p>Using <mark>max-width</mark> instead, in this situation, will improve the browser's handling of small windows.</p>
+	<p><b>Tip:</b> Drag the browser window to smaller than 500px wide, to see the difference between the two divs!</p>
+	<p><b>Note:</b> If you for some reason use both the <mark>width</mark> property and the <mark>max-width</mark> property on the same element, and the value of the <mark>width</mark> property is larger than the <mark>max-width</mark> property; the <mark>max-width</mark> property will be used (and the <mark>width</mark> property will be ignored).</p>
+
+	<h3>Example</h3>
+	<div class="four">This div element has a height of 100px and a max-width of 500px.</div>
+
+	<u><h2>All CSS Dimension Properties</h2></u>
+	<table>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>height</td>
+			<td>Sets the height of an element</td>
+		</tr>
+		<tr>
+			<td>max-height</td>
+			<td>Sets the maximum height of an element</td>
+		</tr>
+		<tr>
+			<td>max-width</td>
+			<td>Sets the maximum width of an element</td>
+		</tr>
+		<tr>
+			<td>min-height</td>
+			<td>Sets the minimum height of an element</td>
+		</tr>
+		<tr>
+			<td>min-width</td>
+			<td>Sets the minimum width of an element</td>
+		</tr>
+		<tr>
+			<td>width</td>
+			<td>Sets the width of an element</td>
+		</tr>
+	</table>
+</body>
+</html>

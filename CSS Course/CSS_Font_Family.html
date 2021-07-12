@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Fonts</title>
+	<style type="text/css">
+		.p1 {
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		.p2 {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.p3 {
+			font-family: "Lucida Console", "Courier New", monospace;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Fonts</h1>
+	<p>Choosing the right font for your website is important!</p>
+
+	<u><h2>Font Selection is Important</h2></u>
+	<p>Choosing the right font has a huge impact on how the readers experience a website.</p>
+	<p>The right font can create a strong identity for your brand.</p>
+	<p>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</p>
+
+	<u><h2>Generic Font Families</h2></u>
+	<p>In CSS there are five generic font families:</p>
+	<ol>
+		<li>Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+		<li>Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+		<li>Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. </li>
+		<li>Cursive fonts imitate human handwriting.</li>
+		<li>Fantasy fonts are decorative/playful fonts.</li>
+	</ol>
+	<p>All the different font names belong to one of the generic font families.</p>
+	<p><b>Note:</b> On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p>
+
+	<u><h2>The CSS font-family Property</h2></u>
+	<p>In CSS, we use the <mark>font-family</mark> property to specify the font of a text.</p>
+	<p>The <mark>font-family</mark> property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.</p>
+	<p>Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p>
+
+	<h3>Example</h3>
+	<p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+	<p class="p2">This is a paragraph, shown in the Arial font.</p>
+	<p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+</body>
+</html>

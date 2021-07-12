@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Layout - Horizontal & Vertical Align</title>
+	<style>
+		.center1 {
+			margin: auto;
+			width: 60%;
+			border: 3px solid #73ad21;
+			padding: 10px;
+		}
+
+		.center2 {
+			border: 3px solid #73ad21;
+			text-align: center;
+		}
+
+		.img1 {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+		.right1 {
+			position: absolute;
+			right: 0px;
+			width: 300px;
+			border: 3px solid #73ad21;
+			padding: 10px;
+		}
+
+		.right2 {
+			float: right;
+			width: 300px;
+			border: 3px solid #73ad21;
+			padding: 10px;
+		}
+
+		.center3{
+			border: 3px solid green;
+			padding: 70px 0;
+		}
+
+		.center4 {
+			border: 3px solid green;
+			padding: 70px 0;
+			text-align: center;
+		}
+
+		.center5 {
+			line-height: 200px;
+			height: 200px;
+			border: 3px solid green;
+			text-align: center;
+		}
+
+		.center5 p {
+			line-height: 1.5;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.center6 {
+			height: 200px;
+			position: relative;
+			border: 3px solid green;
+		}
+
+		.center6 p {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.center7 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 200px;
+			border: 3px solid green;
+		}
+ 	</style>
+</head>
+<body>
+	<h1>CSS Layout - Horizontal & Vertical Align</h1>
+
+	<u><h2>Center Align Elements</h2></u>
+	<p>To horizontally center a block element (like <div>), use <mark>margin: auto;</mark></p>
+	<p>Setting the width of the element will prevent it from stretching out to the edges of its container.</p>
+	<p>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+
+	<h3>Example</h3>
+	<div class="center1">
+	  <p>Hello World!</p>
+	</div>
+
+	<p><b>Note:</b> Center aligning has no effect if the <mark>width</mark> property is not set (or set to 100%).</p>
+
+	<u><h2>Center Align Text</h2></u>
+	<p>To just center the text inside an element, use <mark>text-align: center;</mark></p>
+
+	<h3>Example</h3>
+	<div class="center2">
+	  <p>This text is centered.</p>
+	</div>
+
+	<u><h2>Center an Image</h2></u>
+	<p>To center an image, set left and right margin to <mark>auto</mark> and make it into a <mark>block</mark> element:</p>
+
+	<h3>Example</h3>
+	<img class="img1" src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:40%">
+
+	<u><h2>Left and Right Align - Using position</h2></u>
+	<p>One method for aligning elements is to use <mark>position: absolute;</mark>:</p>
+
+	<h3>Example</h3>
+	<div class="right1">
+	  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	</div>
+
+	<br><br><br><br><br><br>
+
+	<p><b>Note:</b> Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+
+	<u><h2>Left and Right Align - Using float</h2></u>
+	<p>Another method for aligning elements is to use the <mark>float</mark> property:</p>
+
+	<h3>Example</h3>
+	<div class="right2">
+	  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	</div>
+
+	<br><br><br><br><br><br>
+
+	<u><h2>Center Vertically - Using padding</h2></u>
+	<p>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom <mark>padding</mark>:</p>
+
+	<h3>Example</h3>
+	<div class="center3">
+	  <p>I am vertically centered.</p>
+	</div>
+
+	<p>To center both vertically and horizontally, use <mark>padding</mark> and <mark>text-align: center</mark>:</p>
+
+	<h3>Example</h3>
+	<div class="center4">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+
+	<u><h2>Center Vertically - Using line-height</h2></u>
+	<p>Another trick is to use the <mark>line-height</mark> property with a value that is equal to the <mark>height</mark> property:</p>
+
+	<h3>Example</h3>
+	<div class="center5">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+
+	<u><h2>Center Vertically - Usually position & transform</h2></u>
+	<p>If <mark>padding</mark> and <mark>line-height</mark> are not options, another solution is to use positioning and the <mark>transform</mark> property:</p>
+
+	<h3>Example</h3>
+	<div class="center6">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+
+	<u><h2>Center Vertically - Using Flexbox</h2></u>
+	<p>You can also use flexbox to center things.</p>
+
+	<h3>Example</h3>
+	<div class="center7">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Background Attachment</title>
+	<style type="text/css">
+		body {
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv0xu6u-6zK0mTRNb9a4g4vmdqWaVVvm2fBg&usqp=CAU);
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS background-attachment</h1>
+	<p>The <mark>background-attachment</mark> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+
+	<h3>Example</h3>
+	<p>Specify that the background image should be fixed:</p>
+<b><pre>
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+</pre></b>
+
+	<h3>Example</h3>
+	<p>Specify that the background image should scroll with the rest of the page:</p>
+<b><pre>
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+</pre></b>
+</body>
+</html>

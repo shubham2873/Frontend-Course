@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Outline Offset</title>
+	<style>
+		p.one {
+			margin: 30px;
+			border: 1px solid black;
+			outline: 1px solid red;
+			outline-offset: 15px;
+		}
+
+		p.two {
+			margin: 30px;
+			background: yellow;
+			border: 1px solid black;
+			outline: 1px solid red;
+			outline-offset: 15px;
+		}
+
+		table, tr, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Outline Offset</h1>
+	<p>The <mark>outline-offset</mark> property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
+	
+	<p>The following example specifies an outline 15px outside the border edge:</p>
+	<h3>Example</h3>
+	<p class="one">This paragraph has an outline 15px outside the border edge.</p>
+	
+	<p>The following example shows that the space between an element and its outline is transparent:</p>
+	<h3>Example</h3>
+	<p class="two">This paragraph has an outline of 15px outside the border edge.</p>
+
+	<u><h2>All CSS Outline Properties</h2></u>
+	<table>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>outline</td>
+			<td>A shorthand property for setting outline-width, outline-style, and outline-color in one declaration</td>
+		</tr>
+		<tr>
+			<td>outline-color</td>
+			<td>Sets the color of an outline</td>
+		</tr>
+		<tr>
+			<td>outline-offset</td>
+			<td>Specifies the space between an outline and the edge or border of an element</td>
+		</tr>
+		<tr>
+			<td>outline-style</td>
+			<td>Sets the style of an outline</td>
+		</tr>
+		<tr>
+			<td>outline-width</td>
+			<td>Sets the width of an outline</td>
+		</tr>
+	</table>
+</body>
+</html>

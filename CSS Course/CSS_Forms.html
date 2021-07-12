@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Forms</title>
+	<style type="text/css">
+		input {
+			width: 100%;
+		}
+
+		input[type=text2] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+
+		input[type=text3] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid red;
+			border-radius: 4px;
+		}
+
+		input[type=text4] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-bottom: 2px solid red;
+		}
+
+		input[type=text5] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			background-color: #3cbc8d;
+			color: white;
+		}
+
+		input[type=text6] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 1px solid #555;
+			outline: none;
+		}
+
+		input[type=text6]:focus {
+			background-color: lightblue;
+		}
+
+		input[type=text7] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 3px solid #ccc;
+			transition: 0.5s;
+			outline: none;
+		}
+
+		input[type=text7]:focus {
+			border: 3px solid #555;
+		}
+
+		input[type=text8] {
+			width: 100%;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			background-color: white;
+			background-image: url(search.png);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			padding: 12px 20px 12px 40px;
+		}		
+
+		input[type=text9] {
+			width: 30%;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			background-color: white;
+			background-image: url(search.png);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			padding: 12px 20px 12px 40px;
+			transition: width 0.4s ease-in-out;
+		}
+
+		input[type=text9]:focus {
+			width: 100%;
+		}
+
+		textarea {
+			width: 100%;
+			height: 150px;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f8f8f8;
+			font-size: 16px;
+			resize: none;
+		}
+
+		select {
+			width: 100%;
+			padding: 16px 20px;
+			border: none;
+			border-radius: 4px;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Forms</h1>
+
+	<u><h2>Styling Input Fields</h2></u>
+	<p>Use the <mark>width</mark> property to determine the width of the input field:</p>
+
+	<h3>Example</h3>
+	<form>
+		<label for="fname">First Name</label>
+	    <input type="text1" id="fname" name="fname">
+	</form>
+
+	<p>The example above applies to all <span><</span>input> elements. If you only want to style a specific input type, you can use attribute selectors:</p>
+	<ul>
+		<li>input[type=text] - will only select text fields</li>
+		<li>input[type=password] - will only select password fields</li>
+		<li>input[type=number] - will only select number fields</li>
+		<li>etc..</li>
+	</ul>
+
+	<u><h2>Padded Inputs</h2></u>
+	<p>Use the <mark>padding</mark> property to add space inside the text field.</p>
+	<p><b>Tip:</b> When you have many inputs after each other, you might also want to add some <mark>margin</mark>, to add more space outside of them:</p>
+
+	<h3>Example</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text2" id="fname" name="fname">
+	  <label for="lname">Last Name</label>
+	  <input type="text2" id="lname" name="lname">
+	</form>
+
+	<p>Note that we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements.</p>
+
+	<u><h2>Bordered Inputs</h2></u>
+	<p>Use the <mark>border</mark> property to change the border size and color, and use the <mark>border-radius</mark> property to add rounded corners:</p>
+
+	<h3>Example</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text3" id="fname" name="fname">
+	  <label for="lname">Last Name</label>
+	  <input type="text3" id="lname" name="lname">
+	</form>
+
+	<p>If you only want a bottom border, use the <mark>border-bottom</mark> property:</p>
+
+	<h3>Example</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text4" id="fname" name="fname">
+	  <label for="lname">Last Name</label>
+	  <input type="text4" id="lname" name="lname">
+	</form>
+
+	<u><h2>Colored Inputs</h2></u>
+	<p>Use the <mark>background-color</mark> property to add a background color to the input, and the <mark>color</mark> property to change the text color:</p>
+
+	<h3>Example</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text5" id="fname" name="fname" value="John">
+	  <label for="lname">Last Name</label>
+	  <input type="text5" id="lname" name="lname" value="Doe">
+	</form>
+
+	<u><h2>Focused Inputs</h2></u>
+	<p>By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding <mark>outline: none;</mark> to the input.</p>
+	<p>Use the <mark>:focus</mark> selector to do something with the input field when it gets focus:</p>
+
+	<h3>Example 1</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text6" id="fname" name="fname" value="John">
+	  <label for="lname">Last Name</label>
+	  <input type="text6" id="lname" name="lname" value="Doe">
+	</form>
+
+	<h3>Example 2</h3>
+	<form>
+	  <label for="fname">First Name</label>
+	  <input type="text7" id="fname" name="fname" value="John">
+	  <label for="lname">Last Name</label>
+	  <input type="text7" id="lname" name="lname" value="Doe">
+	</form>
+
+	<u><h2>Input with icon/image</h2></u>
+	<p>If you want an icon inside the input, use the <mark>background-image</mark> property and position it with the <mark>background-position</mark> property. Also notice that we add a large left padding to reserve the space of the icon:</p>
+
+	<h3>Example</h3>
+	<form>
+	  <input type="text8" name="search" placeholder="Search..">
+	</form>
+
+	<u><h2>Animated Search Input</h2></u>
+	<p>In this example we use the CSS <mark>transition</mark> property to animate the width of the search input when it gets focus.</p>
+
+	<h3>Example</h3>
+	<form>
+	  <input type="text9" name="search" placeholder="Search..">
+	</form>
+
+	<u><h2>Styling Textareas</h2></u>
+	<p><b>Tip:</b> Use the <mark>resize</mark> property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+
+	<h3>Example</h3>
+	<form>
+	  <textarea>Some text...</textarea>
+	</form>
+
+	<u><h2>Styling Select Menus</h2></u>
+	<h3>Example</h3>
+	<form>
+	  <select id="country" name="country">
+	  <option value="au">Australia</option>
+	  <option value="ca">Canada</option>
+	  <option value="usa">USA</option>
+	  </select>
+	</form>
+</body>
+</html>
